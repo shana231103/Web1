@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    width: 100%;
+}
+
+.logo img {
+    width: auto;
+    height: 130px;
+    padding-left: 70px;
+    padding-right: 70px;
+    position: relative;
+}
+
+.header-top {
+    background-color: rgb(202, 201, 201);
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    width: 780px;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: #69a4f1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 40px;
+    border-radius: 5%;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.cart span {
+    margin-right: 10px;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.cart button {
+    background-color: #4ca7ff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.login button {
+    margin-left: 30px;
+    width: 100px;
+    height: 40px;
+    border-radius: 13px;
+    border-color: rgb(0, 8, 62);
+    transition-duration: 0.4s;
+    align-items: center;
+    cursor: pointer;
+}
+
+.login button:hover {  background-color: #74bcff;;  color: white;}
+
+.register button {
+    margin-left: 4px;
+    width: 100px;
+    height: 40px;
+    border-radius: 13px;
+    border-color: rgb(0, 8, 62);
+    align-items: center;
+    cursor: pointer;
+}
+
+.register button:hover {  background-color: #74bcff;;  color: white;}

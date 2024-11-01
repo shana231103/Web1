@@ -12,10 +12,10 @@ body {
     width: 100%;
 }
 
-.logo img {
+.header-logo img {
     width: auto;
     height: 130px;
-    padding-left: 70px;
+    padding-left: 50px;
     padding-right: 70px;
     position: relative;
 }
@@ -87,22 +87,144 @@ body {
     width: 100px;
     height: 40px;
     border-radius: 13px;
+    background-color: #A9A9A9;
     border-color: rgb(0, 8, 62);
-    transition-duration: 0.4s;
+    transition-duration: 1.3s;
     align-items: center;
     cursor: pointer;
 }
 
-.login button:hover {  background-color: #74bcff;;  color: white;}
+.login button:hover {  background-color: #74bcff;;  color: black;}
 
 .register button {
     margin-left: 4px;
     width: 100px;
     height: 40px;
     border-radius: 13px;
+    background-color: #A9A9A9;
     border-color: rgb(0, 8, 62);
+    transition-duration: 1.3s;
     align-items: center;
     cursor: pointer;
 }
 
-.register button:hover {  background-color: #74bcff;;  color: white;}
+.register button:hover {  background-color: #74bcff;;  color: black;}
+
+#wp-products {
+    padding-top:113px;
+    padding-bottom: 78px;
+    padding-left:131px;
+    padding-right:131px;
+    background-color: #efe7e7;
+}
+
+#list-card {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#list-card .item {
+    width: 270px;
+    height: 360px;
+    background: rgb(202, 201, 201);
+    border-radius: 10px;
+    border-style: inset;
+    margin-bottom: 50px;
+}
+
+#list-card .item img {
+    display: block;
+    margin:0px auto;
+    margin-top:17px;
+}
+
+#list-card .item .name {
+    text-align: center;
+    color:#000000;
+    margin-top:21px;
+}
+
+#list-card .item .price {
+    text-align: center;
+    color:#000000;
+    margin-top:13px;
+}
+
+#list-card .item .buy {
+    margin-left: 85px;
+    margin-top: 13px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 35px;
+    border-radius: 13px;
+    background-color: #ffffff;
+    border-color: rgb(0, 8, 62);
+    transition-duration: 1.3s;
+    cursor: pointer;
+}
+
+#list-card .item .buy:hover {  background-color: #fd8989;;  color: black;}
+
+.list-page {
+    width: 50%;
+    margin:0px auto;
+}
+
+.list-page {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-page .item {
+    margin:0px 15px;
+    width: 37px;
+    height: 37px;
+    background:#ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-page .item a {
+    color:#000000;
+    text-decoration: none;
+}
+
+.footer-content {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    margin: 18px;
+    width: 10%;
+    min-width: 180px;
+}
+
+.footer-menu {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu .footer-link {
+    width: fit-content;
+    min-width: 120px;
+    display: inline-block;
+    padding: 0 7px;
+    font-size: 2rem;
+    text-align: center;
+}

@@ -2,5 +2,4 @@
 
 Thành viên: Cao Nguyễn Đức Huy
 
-Nếu chưa có nhóm đồ án hãy liên hệ mình ^_^
 

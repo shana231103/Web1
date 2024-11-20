@@ -1,49 +1,67 @@
 let thisPage = 1;
 let limit = 8;
-let list = document.querySelectorAll('.listCard .item');
 
-function loadItem(){
+// Hàm tải danh sách các phần tử
+function loadItem() {
+    // Lấy lại danh sách các phần tử `.item`
+    let list = document.querySelectorAll('.list .item');
+    
     let beginGet = limit * (thisPage - 1);
     let endGet = limit * thisPage - 1;
-    list.forEach((item, key)=>{
-        if(key >= beginGet && key <= endGet){
+
+    // Hiển thị hoặc ẩn các phần tử dựa trên phân trang
+    list.forEach((item, key) => {
+        if (key >= beginGet && key <= endGet) {
             item.style.display = 'block';
-        }else{
+        } else {
             item.style.display = 'none';
         }
-    })
-    listPage();
-}
-loadItem();
-function listPage(){
-    let count = Math.ceil(list.length / limit);
-    document.querySelector('.listPage').innerHTML = '';
+    });
 
-    if(thisPage != 1){
+    // Tạo danh sách số trang
+    listPage(list.length);
+}
+
+// Hàm tạo danh sách số trang
+function listPage(totalItems) {
+    let count = Math.ceil(totalItems / limit); // Tổng số trang
+    let listPageContainer = document.querySelector('.listPage');
+    listPageContainer.innerHTML = '';
+
+    // Nút "Prev"
+    if (thisPage != 1) {
         let prev = document.createElement('li');
         prev.innerText = 'Prev';
-        prev.setAttribute('onclick', "changePage(" + (thisPage - 1) + ")");
-        document.querySelector('.listPage').appendChild(prev);
+        prev.setAttribute('onclick', `changePage(${thisPage - 1})`);
+        listPageContainer.appendChild(prev);
     }
 
-    for(i = 1; i <= count; i++){
+    // Các số trang
+    for (let i = 1; i <= count; i++) {
         let newPage = document.createElement('li');
         newPage.innerText = i;
-        if(i == thisPage){
+        if (i == thisPage) {
             newPage.classList.add('active');
         }
-        newPage.setAttribute('onclick', "changePage(" + i + ")");
-        document.querySelector('.listPage').appendChild(newPage);
+        newPage.setAttribute('onclick', `changePage(${i})`);
+        listPageContainer.appendChild(newPage);
     }
 
-    if(thisPage != count){
+    // Nút "Next"
+    if (thisPage != count) {
         let next = document.createElement('li');
         next.innerText = 'Next';
-        next.setAttribute('onclick', "changePage(" + (thisPage + 1) + ")");
-        document.querySelector('.listPage').appendChild(next);
+        next.setAttribute('onclick', `changePage(${thisPage + 1})`);
+        listPageContainer.appendChild(next);
     }
 }
-function changePage(i){
+
+// Hàm thay đổi trang
+function changePage(i) {
     thisPage = i;
     loadItem();
 }
+
+// Khởi động phân trang sau khi thêm sản phẩm
+initApp(); // Gọi từ file card.js
+loadItem();

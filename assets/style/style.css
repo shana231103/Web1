@@ -109,6 +109,148 @@ body {
 
 .register-btn button:hover {  background-color: #74bcff;;  color: black;}
 
+.overlay {
+    display: none; /* Ban đầu ẩn form */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.login {
+    background-color: #9cdeff;
+    width: 390px;
+    text-align: center;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 40px 30px;
+    box-shadow: 0 50px 150px #5553;
+    position: relative;
+}
+
+.login .title{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.login .closeForm{
+    position: relative;
+    border: none;
+}
+
+.login .group{
+    background-color: #fff;
+    border-radius: 10px;
+    height: 40px;
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login .group input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 20px;
+    outline: none;
+}
+
+.login .signIn button{
+    background-color: #FA6A69;
+    width: 50%;
+    border-radius: 10px;
+    height: 50px;
+    border: none;
+    box-shadow: 0 10px 20px #FA6A6999;
+    transition: 0.5s;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login {
+    background-color: #9cdeff;
+    width: 390px;
+    text-align: center;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 40px 30px;
+    box-shadow: 0 50px 150px #5553;
+    position: relative;
+}
+
+.register {
+    background-color: #9cdeff;
+    width: 390px;
+    text-align: center;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 40px 30px;
+    box-shadow: 0 50px 150px #5553;
+    position: relative;
+}
+
+.register .title{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.register .closeForm{
+    position: relative;
+    border: none;
+}
+
+.register .group{
+    background-color: #fff;
+    border-radius: 10px;
+    height: 40px;
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register .group input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 20px;
+    outline: none;
+}
+
+.register .signUp button{
+    background-color: #FA6A69;
+    width: 50%;
+    border-radius: 10px;
+    height: 50px;
+    border: none;
+    box-shadow: 0 10px 20px #FA6A6999;
+    transition: 0.5s;
+    color: #fff;
+    cursor: pointer;
+}
+
+#closeForm {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#closeForm img {
+    width: 20px;
+    height: 20px;
+}
+
 #wp-products {
     padding-top:113px;
     padding-bottom: 78px;
@@ -166,7 +308,7 @@ body {
 
 .filter-item button:hover {  background-color: #74bcff;;  color: black;}
 
-.listCard {
+.list {
     display: flex;
     list-style: none;
     justify-content: space-around;
@@ -174,16 +316,16 @@ body {
     flex-wrap: wrap;
 }
 
-.listCard .item {
+.list .item {
     width: 270px;
-    height: 360px;
+    height: 390px;
     background: rgb(202, 201, 201);
     border-radius: 10px;
     border-style: inset;
     margin-bottom: 50px;
 }
 
-.listCard .item img {
+.list .item img{
     width: 144px;
     height: 210px;
     display: block;
@@ -191,19 +333,19 @@ body {
     margin-top:17px;
 }
 
-.listCard .item .name {
+.list .item .name{
     text-align: center;
     color:.000000;
     margin-top:13px;
 }
 
-.listCard .item .price {
+.list .item .price{
     text-align: center;
     color:#000000;
     margin-top:13px;
 }
 
-.listCard .item .buy {
+.list .item .button {
     margin-left: 95px;
     margin-top: 8px;
     display: flex;
@@ -220,7 +362,7 @@ body {
     font-style: oblique;
 }
 
-.listCard .item .buy:hover {  background-color: #fd8989;;  color: black;}
+.list .item .button:hover {  background-color: #fd8989;;  color: black;}
 
 .listPage{
     padding: 10px;

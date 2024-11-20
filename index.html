@@ -27,13 +27,50 @@
                 </button>
             </div>
             <div class="login-btn">
-                <button type="button">Đăng nhập</button>
+                <button type="button" onclick="toggleLogin()">Đăng nhập</button>
+            </div>
+            <div id="login-container" class="overlay" onclick="closeOnOverlay(event, 'login-container')">
+                <div class="login">
+                    <button id="closeForm" onclick="toggleLogin(event)">
+                        <img src="./assets/icon/remove.png" alt="close">
+                    </button>
+                    <div class="title">Đăng nhập</div>
+                    <div class="group">
+                        <input type="text" id="user" placeholder="Tên đăng nhập">
+                    </div>
+                    <div class="group">
+                        <input type="password" id="pass" placeholder="Mật khẩu">
+                    </div>
+                    <div class="signIn">
+                        <button onclick="checkSignIn()" type="submit">Đăng nhập</button>
+                    </div>
+                </div>
             </div>
             <div class="register-btn">
-                <button type="button" >Đăng ký</button>
+                <button type="button" onclick="toggleRegister()">Đăng ký</button>
             </div>
-        </div> 
+            <div id="register-container" class="overlay" onclick="closeOnOverlay(event, 'register-container')">
+                <div class="register">
+                    <button id="closeForm" onclick="toggleRegister(event)">
+                        <img src="./assets/icon/remove.png" alt="close">
+                    </button>
+                    <div class="title">Đăng ký</div>
+                    <div class="group">
+                        <input type="text" id="reg-user" placeholder="Tên đăng nhập">
+                    </div>
+                    <div class="group">
+                        <input type="password" id="reg-pass" placeholder="Mật khẩu">
+                    </div>
+                    <div class="group">
+                        <input type="password" id="reg-pass2" placeholder="Nhập lại mật khẩu">
+                    </div>
+                    <div class="signUp">
+                        <button onclick="checkSignUp()" type="submit">Đăng ký</button>
+                    </div>
+                </div>
+            </div>  
     </header>
+
     <div id="wp-products">
         <div class="container">
         <form class="filter">
@@ -59,100 +96,10 @@
             </div>
         </form>
         </div>             
-        <div class="listCard">
-            <div class="item">
-                <img src="assets/card/Ra.jpg">
-                <div class="name">Tên card</div>
-                <div class="price">Giá tiền</div>
-                <button class="buy" type="submit">Thêm vào giỏ hàng</button>
-            </div>
-            <div class="item">
-                <img src="assets/card/winged_kuriboh.jpg">
-                <div class="name">Tên card</div>
-                <div class="price">Giá tiền</div>
-                <button class="buy" type="submit">Thêm vào giỏ hàng</button>
-            </div>
-            <div class="item">
-                <img src="assets/card/kuriboh.jpg" alt="">
-                <div class="name">Tên card</div>
-                <div class="price">Giá tiền</div>
-                <button class="buy" type="submit">Thêm vào giỏ hàng</button>
-            </div>
-            <div class="item">
-                <img src="assets/card/BE_White_Dragon.jpg" alt="">
-                <div class="name">Tên card</div>
-                <div class="price">Giá tiền</div>
-                <button class="buy" type="submit">Thêm vào giỏ hàng</button>
-            </div>
-            <div class="item">
-                <img src="assets/card/Number_101.jpg" alt="">
-                <div class="name">Tên card</div>
-                <div class="price">Giá tiền</div>
-                <button class="buy" type="submit">Thêm vào giỏ hàng</button>
-            </div>
-            <div class="item">
-                <img src="assets/card/Dark_magician_girl.jpg" alt="">
-                <div class="name">Tên card</div>
-                <div class="price">Giá tiền</div>
-                <button class="buy" type="submit">Thêm vào giỏ hàng</button>
-            </div>
-            <div class="item">
-                <img src="assets/card/Polymerization.jpg" alt="">
-                <div class="name">Tên card</div>
-                <div class="price">Giá tiền</div>
-                <button class="buy" type="submit">Thêm vào giỏ hàng</button>
-            </div>
-            <div class="item">
-                <img src="assets/card/Super_Poly.jpg" alt="">
-                <div class="name">Tên card</div>
-                <div class="price">Giá tiền</div>
-                <button class="buy" type="submit">Thêm vào giỏ hàng</button>
-            </div>
-            <div class="item">
-                <img src="assets/card/Mirror_Force.jpg" alt="">
-                <div class="name">Tên card</div>
-                <div class="price">Giá tiền</div>
-                <button class="buy" type="submit">Thêm vào giỏ hàng</button>
-            </div>
-            <div class="item">
-                <img src="assets/card/linkuriboh.jpg" alt="">
-                <div class="name">Tên card</div>
-                <div class="price">Giá tiền</div>
-                <button class="buy" type="submit">Thêm vào giỏ hàng</button>
-            </div>
-            <div class="item">
-                <img src="assets/card/winged_kuriboh.jpg">
-                <div class="name">Tên card</div>
-                <div class="price">Giá tiền</div>
-                <button class="buy" type="submit">Thêm vào giỏ hàng</button>
-            </div>
-            <div class="item">
-                <img src="assets/card/Exodia.jpg" alt="">
-                <div class="name">Tên card</div>
-                <div class="price">Giá tiền</div>
-                <button class="buy" type="submit">Thêm vào giỏ hàng</button>
-            </div>
-            <div class="item">
-                <img src="assets/card/GE_Cipher.jpg" alt="">
-                <div class="name">Tên card</div>
-                <div class="price">Giá tiền</div>
-                <button class="buy" type="submit">Thêm vào giỏ hàng</button>
-            </div>
-            <div class="item">
-                <img src="assets/card/GE_Photon.jpg" alt="">
-                <div class="name">Tên card</div>
-                <div class="price">Giá tiền</div>
-                <button class="buy" type="submit">Thêm vào giỏ hàng</button>
-            </div>
-            <div class="item">
-                <img src="assets/card/Neo_GE_Photon.jpg" alt="">
-                <div class="name">Tên card</div>
-                <div class="price">Giá tiền</div>
-                <button class="buy" type="submit">Thêm vào giỏ hàng</button>
-            </div>
+        <div class="list">
         </div>
+        
         <ul class="listPage">
-
         </ul>
     <div id="footer">
         <div class="footer-content">
@@ -162,6 +109,9 @@
           </div>
         </div>
     </div>
+    <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/register.js"></script>
+    <script src="./assets/js/card.js"></script>
     <script src="./assets/js/pagination.js"></script>
 </body>
 </html>

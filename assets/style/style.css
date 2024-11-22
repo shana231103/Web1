@@ -318,7 +318,7 @@ body {
 
 .list .item {
     width: 270px;
-    height: 390px;
+    height: 420px;
     background: rgb(202, 201, 201);
     border-radius: 10px;
     border-style: inset;
@@ -340,6 +340,12 @@ body {
 }
 
 .list .item .price{
+    text-align: center;
+    color:#000000;
+    margin-top:13px;
+}
+
+.list .item .sl{
     text-align: center;
     color:#000000;
     margin-top:13px;

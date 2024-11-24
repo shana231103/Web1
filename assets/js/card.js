@@ -1,6 +1,6 @@
-let list = document.querySelector('.list');
+export let list = document.querySelector('.list');
 
-let products = [
+export const products = [
     {
         id: 1,
         cardType: 'Monster',
@@ -28,7 +28,7 @@ let products = [
     {
         id: 4,
         cardType: 'Monster',
-        name: 'Blue Eyes White Dragon',
+        name: 'Blue-eyes White Dragon',
         price: 10000,
         sl:4,
         image: './assets/card/BE_White_Dragon.jpg'
@@ -139,7 +139,7 @@ let products = [
     },
     {
         id: 18,
-        cardType: 'Spell',
+        cardType: 'Monster',
         name: 'Effect Veiler',
         price: 10000,
         sl:4,
@@ -525,7 +525,7 @@ let products = [
         id: 66,
         cardType: 'Monster',
         name: 'Sphere Kuriboh',
-        price: 6666666,
+        price: 10000,
         sl:4,
         image: './assets/card/sphere_kuriboh.jpg'
     },
@@ -547,7 +547,7 @@ let products = [
     },
     {
         id: 69,
-        cardType: 'Monster',
+        cardType: 'Spell',
         name: 'The Flute of Summoning Kuriboh',
         price: 369369,
         sl:4,
@@ -560,13 +560,19 @@ let products = [
         price: 999999999999,
         sl:0,
         image: './assets/card/winged_kuriboh.jpg'
+    },
+    {
+        id: 71,
+        cardType: 'Trap',
+        name: 'Mirror Force',
+        price: 10000,
+        sl:3,
+        image: './assets/card/Mirror_Force.jpg'
     }
 ];
 
-let listCards = [];
 function initApp(){
     list.innerHTML = '';
-    
     products.forEach((value, key)=>{
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
@@ -579,4 +585,5 @@ function initApp(){
         list.appendChild(newDiv);
     })
 }
+
 initApp();

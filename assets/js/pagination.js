@@ -1,67 +1,67 @@
-let thisPage = 1;
-let limit = 8;
+let thisPage = 1; // Trang hiện tại
+const limit = 8; // Số phần tử trên mỗi trang
 
-// Hàm tải danh sách các phần tử
+// Hàm tải các mục hiện có dựa trên trang hiện tại
 function loadItem() {
-    // Lấy lại danh sách các phần tử `.item`
-    let list = document.querySelectorAll('.list .item');
-    
-    let beginGet = limit * (thisPage - 1);
-    let endGet = limit * thisPage - 1;
+    // Lấy tất cả các phần tử `.item` từ DOM
+    const list = document.querySelectorAll('.list .item');
+
+    // Tính toán phần tử bắt đầu và kết thúc của trang
+    const beginGet = limit * (thisPage - 1);
+    const endGet = limit * thisPage;
 
     // Hiển thị hoặc ẩn các phần tử dựa trên phân trang
-    list.forEach((item, key) => {
-        if (key >= beginGet && key <= endGet) {
-            item.style.display = 'block';
+    list.forEach((item, index) => {
+        if (index >= beginGet && index < endGet) {
+            item.style.display = 'block'; // Hiển thị phần tử
         } else {
-            item.style.display = 'none';
+            item.style.display = 'none'; // Ẩn phần tử
         }
     });
 
-    // Tạo danh sách số trang
+    // Gọi hàm để tạo danh sách số trang
     listPage(list.length);
 }
 
 // Hàm tạo danh sách số trang
 function listPage(totalItems) {
-    let count = Math.ceil(totalItems / limit); // Tổng số trang
-    let listPageContainer = document.querySelector('.listPage');
-    listPageContainer.innerHTML = '';
+    const count = Math.ceil(totalItems / limit); // Tổng số trang
+    const listPageContainer = document.querySelector('.listPage');
+    listPageContainer.innerHTML = ''; // Xóa các trang cũ
 
     // Nút "Prev"
-    if (thisPage != 1) {
-        let prev = document.createElement('li');
+    if (thisPage > 1) {
+        const prev = document.createElement('li');
         prev.innerText = 'Prev';
-        prev.setAttribute('onclick', `changePage(${thisPage - 1})`);
+        prev.addEventListener('click', () => changePage(thisPage - 1));
         listPageContainer.appendChild(prev);
     }
 
     // Các số trang
     for (let i = 1; i <= count; i++) {
-        let newPage = document.createElement('li');
+        const newPage = document.createElement('li');
         newPage.innerText = i;
-        if (i == thisPage) {
-            newPage.classList.add('active');
+        if (i === thisPage) {
+            newPage.classList.add('active'); // Trang hiện tại
         }
-        newPage.setAttribute('onclick', `changePage(${i})`);
+        newPage.addEventListener('click', () => changePage(i));
         listPageContainer.appendChild(newPage);
     }
 
     // Nút "Next"
-    if (thisPage != count) {
-        let next = document.createElement('li');
+    if (thisPage < count) {
+        const next = document.createElement('li');
         next.innerText = 'Next';
-        next.setAttribute('onclick', `changePage(${thisPage + 1})`);
+        next.addEventListener('click', () => changePage(thisPage + 1));
         listPageContainer.appendChild(next);
     }
 }
 
 // Hàm thay đổi trang
-function changePage(i) {
-    thisPage = i;
-    loadItem();
+function changePage(page) {
+    thisPage = page; // Cập nhật trang hiện tại
+    loadItem(); // Tải lại danh sách phần tử
 }
 
-// Khởi động phân trang sau khi thêm sản phẩm
-initApp(); // Gọi từ file card.js
+// Gọi hàm để khởi động phân trang sau khi phần tử đã được render
 loadItem();

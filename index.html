@@ -19,7 +19,7 @@
             </div>
             <div class="search-bar">
                 <input name="name" type="text"  placeholder="Tìm kiếm sản phẩm">
-                <button id="find" href=""><img src="./assets/icon/search.png" alt="">
+                <button id="find" type="submit"><img src="./assets/icon/search.png" alt="">
                 </button>
             </div>
             <div class="cart">
@@ -75,14 +75,6 @@
         <div class="container">
         <form class="filter">
             <div class="filter-item">
-            <label">Lọc theo giá tiền: </label>
-            <select name="category">
-                <option value="">---</option>
-                <option value="up">Giá từ thấp lên cao</option>
-                <option value="down">Giá từ cao xuống thấp</option>
-            </select>
-            </div>
-            <div class="filter-item">
                 <label style="font-style: italic;">Lọc theo Card type: </label>
                 <select name="card-type">
                     <option value="">---</option>
@@ -92,6 +84,14 @@
                 </select>
             </div>
             <div class="filter-item">
+            <label">Lọc theo giá tiền: </label>
+            <select name="category">
+                <option value="">---</option>
+                <option value="up">Giá từ thấp lên cao</option>
+                <option value="down">Giá từ cao xuống thấp</option>
+            </select>
+            </div>
+            <div class="filter-item submit">
                 <button>Tìm kiếm</button>
             </div>
         </form>
@@ -109,9 +109,11 @@
           </div>
         </div>
     </div>
+    
     <script src="./assets/js/login.js"></script>
     <script src="./assets/js/register.js"></script>
-    <script src="./assets/js/card.js"></script>
-    <script src="./assets/js/pagination.js"></script>
+    <script type="module" src="./assets/js/card.js"></script>
+    <script type="module" src="./assets/js/pagination.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
 </body>
 </html>

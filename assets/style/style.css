@@ -279,7 +279,8 @@ body {
 }
 
 .filter-item select{
-    width: 33%;
+    text-align: center;
+    width: 54.5%;
     padding: 5px;
     border: none;
     background-color: #ffffff;
@@ -295,7 +296,7 @@ body {
 }
 
 .filter-item button{
-    width: 33%;
+    width: 130px;
     height: 30px;
     background-color: #ffffff;
     border-radius: 13px;

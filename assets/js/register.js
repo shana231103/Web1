@@ -54,5 +54,5 @@ function checkSignUp() {
     }
 
     alert('Đăng ký thành công!');
-    document.getElementById('login-container').style.display = 'none';
+    document.getElementById('register-container').style.display = 'none';
 }

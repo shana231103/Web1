@@ -229,7 +229,7 @@ export const products = [
         id: 29,
         cardType: 'Monster',
         name: 'Galaxy-eyes Photon Dragon',
-        price: 99999999,
+        price: 999999,
         sl:4,
         image: './assets/card/GE_Photon.jpg'
     },
@@ -253,7 +253,7 @@ export const products = [
         id: 32,
         cardType: 'Monster',
         name: 'Kuriboh',
-        price: 10000000000,
+        price: 300000,
         sl:4,
         image: './assets/card/kuriboh.jpg'
     },
@@ -293,7 +293,7 @@ export const products = [
         id: 37,
         cardType: 'Monster',
         name: 'Neo Galaxy-Eyes Photon Dragon',
-        price: 4444444,
+        price: 44444,
         sl:4,
         image: './assets/card/Neo_GE_Photon.jpg'
     },
@@ -333,7 +333,7 @@ export const products = [
         id: 42,
         cardType: 'Monster',
         name: 'Number 101: Silent Honor ARK',
-        price: 1010101010101,
+        price: 101010,
         sl:1,
         image: './assets/card/Number_101.jpg'
     },
@@ -397,7 +397,7 @@ export const products = [
         id: 50,
         cardType: 'Monster',
         name: 'Number C101: Silent Honor DARK',
-        price: 101101101101,
+        price: 101101,
         sl:111,
         image: './assets/card/Number_C101.jpg'
     },
@@ -557,7 +557,7 @@ export const products = [
         id: 70,
         cardType: 'Monster',
         name: 'Winged Kuriboh',
-        price: 999999999999,
+        price: 999999,
         sl:0,
         image: './assets/card/winged_kuriboh.jpg'
     },
@@ -573,15 +573,15 @@ export const products = [
 
 function initApp(){
     list.innerHTML = '';
-    products.forEach((value, key)=>{
+    products.forEach((value)=>{
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img src="${value.image}">
-            <div class="name">Tên card: ${value.name}</div>
+            <img src="${value.image} alt="${value.name}">
+            <div class="name">${value.name}</div>
             <div class="price">Giá: ${value.price.toLocaleString()}</div>
             <div class="sl">Số lượng còn: ${value.sl.toLocaleString()}</div>
-            <button class="button" onclick="addToCart(${key})">Thêm vào giỏ hàng</button>`;
+            <button class="button" onclick="addToCart(${value.id})">Thêm vào giỏ hàng</button>`;
         list.appendChild(newDiv);
     })
 }

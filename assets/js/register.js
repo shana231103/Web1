@@ -30,9 +30,9 @@ function isValidPassword(password) {
 }
 
 function checkSignUp() {
-    const user = document.getElementById('reg-user').value;
-    const pass = document.getElementById('reg-pass').value;
-    const pass2 = document.getElementById('reg-pass2').value;
+    const user = document.getElementById('reg-user').value.trim();
+    const pass = document.getElementById('reg-pass').value.trim();
+    const pass2 = document.getElementById('reg-pass2').value.trim();
     if (!user || !pass || !pass2) {
         alert('Vui lòng nhập đầy đủ thông tin');
         return;
@@ -53,6 +53,20 @@ function checkSignUp() {
         return;
     }
 
-    alert('Đăng ký thành công!');
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+
+    const isExistingUser = users.some(u => u.username === user);
+    if (isExistingUser) {
+        alert('Tên đăng nhập đã tồn tại, vui lòng chọn tên khác!');
+        return;
+    }
+
+    users.push({ username: user, password: pass });
+
+    localStorage.setItem('users', JSON.stringify(users));
+
+    alert('Đăng ký thành công! Vui lòng đăng nhập.');
+    toggleRegister(); 
+    toggleLogin(); 
     document.getElementById('register-container').style.display = 'none';
 }

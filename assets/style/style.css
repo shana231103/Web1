@@ -133,6 +133,7 @@ body {
     position: relative;
 }
 
+
 .login .title{
     font-size: large;
     font-weight: bold;
@@ -172,17 +173,6 @@ body {
     transition: 0.5s;
     color: #fff;
     cursor: pointer;
-}
-
-.login {
-    background-color: #9cdeff;
-    width: 390px;
-    text-align: center;
-    border: 2px solid var(--border-color);
-    border-radius: 10px;
-    padding: 40px 30px;
-    box-shadow: 0 50px 150px #5553;
-    position: relative;
 }
 
 .register {
@@ -251,6 +241,34 @@ body {
     height: 20px;
 }
 
+.user-container {
+    display: flex;
+    justify-content: center;
+}
+
+.user-display {
+    margin: 13px;
+    align-items: center;
+    font-size: large;
+    justify-content: center;
+    text-align: center;
+}
+
+.logout-btn {
+    margin-top: 15px;
+    width: 100px;
+    height: 40px;
+    border-radius: 13px;
+    background-color: #ffffff;
+    border-color: rgb(0, 8, 62);
+    transition-duration: 0.3s;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logout-btn:hover {  background-color: #74bcff;;  color: black;}
+
 #wp-products {
     padding-top:113px;
     padding-bottom: 78px;
@@ -264,34 +282,28 @@ body {
 }
 
 .filter{
-    width: 100%;
     margin: 4px;
     padding: 20px;
-    display:flex;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .filter-item{
-    width: 100%;
-    display: flex;
-    justify-content: center;
     align-items: center;
     font-weight: bold;
 }
 
 .filter-item select{
     text-align: center;
-    width: 54.5%;
     padding: 5px;
     border: none;
     background-color: #ffffff;
-    border-left: 1px solid #ddd;
     outline: none;
     font-style: italic;
 }
 
 .filter-item label{
-    display: block;
-    padding: 0 10px;
     font-style: italic;
 }
 
@@ -389,6 +401,99 @@ body {
 .listPage .active{
     background-color: #fd8989;
     color: #000000;
+}
+
+.cartTab{
+    width: 400px;
+    background-color: #5e5e5e;
+    color: #000000;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+
+body.showCart .cartTab{
+    right: 0;
+}
+
+body.showCart .container{
+    transform: translateX(-250px);
+}
+
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.cartTab .btnCart{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartTab button{
+    background-color: #95c8f7;
+    width: 200px;
+    height: 80px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cartTab .close{
+    background-color: rgb(186, 183, 183);
+}
+
+.cartTab .cartTotal{
+    font-size:large;
+    font-weight: bold;
+    padding-left: 13px;
+}
+
+.listCart .item img{
+    width: 100%;
+}
+
+.listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    background-color: #a79f9f;
+}
+
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}
+
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #040202;
+    cursor: auto;
+}
+
+.listCart .item:nth-child(even){
+    background-color: #95c8f7
+}
+
+.listCart{
+    overflow: auto;
+}
+
+.cartTab total {
+    text-align: center;
+    display: flex;
 }
 
 .footer-content {

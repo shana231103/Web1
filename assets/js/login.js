@@ -30,8 +30,8 @@ function isValidPassword(password) {
 }
 
 function checkSignIn() {
-    const user = document.getElementById('user').value;
-    const pass = document.getElementById('pass').value;
+    const user = document.getElementById('user').value.trim();
+    const pass = document.getElementById('pass').value.trim();
     if (!user || !pass) {
         alert('Vui lòng nhập đầy đủ thông tin!');
         return;
@@ -42,7 +42,51 @@ function checkSignIn() {
         return;
     }
 
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+
+    const isValidUser = users.some(u => u.username === user && u.password === pass);
+
+    if (!isValidUser) {
+        alert('Sai tên đăng nhập hoặc mật khẩu!');
+        return;
+    }
+
     alert('Đăng nhập thành công!');
+    localStorage.setItem('currentUser', user);
     document.getElementById('login-container').style.display = 'none';
+    displayLoggedInUser(user);
 }
 
+function displayLoggedInUser(username) {
+    // Ẩn các nút "Đăng nhập" và "Đăng ký"
+    const loginBtn = document.querySelector('.login-btn');
+    const registerBtn = document.querySelector('.register-btn');
+    loginBtn.style.display = 'none';
+    registerBtn.style.display = 'none';
+
+    // Tạo container hiển thị tên người dùng và nút đăng xuất
+    const userContainer = document.createElement('div');
+    userContainer.classList.add('user-container');
+    // Hiển thị tên người dùng
+    const userDisplay = document.createElement('div');
+    userDisplay.classList.add('user-display');
+    userDisplay.innerHTML = `Xin chào <br> <b>${username}</b> </br>`;
+    // Tạo nút "Đăng xuất"
+    const logoutButton = document.createElement('button');
+    logoutButton.classList.add('logout-btn');
+    logoutButton.innerText = 'Đăng xuất';
+
+    logoutButton.addEventListener('click', () => {
+        localStorage.removeItem('currentUser');
+        alert('Đăng xuất thành công');
+        location.reload(); 
+    });
+
+    // Thêm tên người dùng và nút "Đăng xuất" vào container
+    userContainer.appendChild(userDisplay);
+    userContainer.appendChild(logoutButton);
+
+    // Thêm container vào header
+    const headerMain = document.querySelector('.header-main');
+    headerMain.appendChild(userContainer); // Thêm container vào header
+}

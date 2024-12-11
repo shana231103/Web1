@@ -6,25 +6,23 @@ const searchInput = document.querySelector('.search-bar input[name="name"]');
 const searchButton = document.getElementById('find');
 const listPageContainer = document.querySelector('.listPage');
 
-let filteredProducts = products; // Sản phẩm sau khi lọc
-let thisPage = 1; // Trang hiện tại
-const limit = 8; // Số phần tử trên mỗi trang
+let filteredProducts = products; // hien thi sau khi loc sp
+let thisPage = 1; 
+const limit = 8; //limit sp 1 trang
 
-// Hàm render sản phẩm
+// render sp
 function renderProducts(productsToRender) {
-    list.innerHTML = ''; // Xóa danh sách cũ
+    list.innerHTML = ''; // xoa ds cu~
 
-    // Tính toán phần tử bắt đầu và kết thúc của trang
     const beginGet = limit * (thisPage - 1);
     const endGet = limit * thisPage;
 
-    // Hiển thị các sản phẩm trong phạm vi hiện tại
     productsToRender.slice(beginGet, endGet).forEach(product => {
         const newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
             <img src="${product.image}" alt="${product.name}">
-            <div class="name">Tên card: ${product.name}</div>
+            <div class="name"> ${product.name}</div>
             <div class="price">Giá: ${product.price.toLocaleString()}</div>
             <div class="sl">Số lượng còn: ${product.sl.toLocaleString()}</div>
             <button class="button" onclick="addToCart(${product.id})">Thêm vào giỏ hàng</button>
@@ -32,7 +30,6 @@ function renderProducts(productsToRender) {
         list.appendChild(newDiv);
     });
 
-    // Tạo danh sách số trang
     listPage(productsToRender.length);
 }
 

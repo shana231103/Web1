@@ -1,71 +1,53 @@
-/*
-// Hàm lấy dữ liệu giỏ hàng từ Local Storage
-function loadCartFromLocalStorage() {
-    const storedCart = localStorage.getItem('cart');
-    if (storedCart) {
-        cart = JSON.parse(storedCart);
-    }
-}
-
-// Hàm hiển thị giỏ hàng trên giao diện
-function renderCartToHTML() {
-    // Lấy phần tử hiển thị danh sách giỏ hàng
-    const listCartHTML = document.querySelector('.returnCart .list');
-    listCartHTML.innerHTML = ''; // Xóa dữ liệu cũ
-
-    // Lấy phần tử hiển thị tổng số lượng và tổng tiền
-    const totalQuantityHTML = document.querySelector('.totalQuantity');
+    const listContainer = document.querySelector('.list'); 
     const totalPriceHTML = document.querySelector('.totalPrice');
+    const thanhToan = document.querySelector('.buttonCheckout');  
+
+    // Lấy giỏ hàng từ localStorage
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const products = JSON.parse(localStorage.getItem('products')) || [];
 
     let totalQuantity = 0;
-    let totalPrice = 0;
+    let totalPrice = 0; 
 
-    // Kiểm tra nếu có sản phẩm trong giỏ hàng
-    if (cart.length > 0) {
-        cart.forEach(item => {
-            if (item) {
-                // Tìm thông tin sản phẩm dựa trên `productId`
-                const product = findProductById(item.productId);
+    cart.forEach(item => {
+        const products = JSON.parse(localStorage.getItem('products')) || [];
+        const product = products.find(p => p.id === item.productId); 
+    
+        if (product) {
+            totalQuantity += item.quantity;
+            totalPrice += product.price * item.quantity;
+    
+            const newItem = document.createElement('div');
+            newItem.classList.add('item');
+            newItem.innerHTML = `
+                <div class="image">
+                    <img src="${product.image}" alt="${product.name}" style="width: 100px; height: auto;">
+                </div>
+                <div class="details">
+                    <div class="name">${product.name}</div>
+                    <div class="quantity">Số lượng: ${item.quantity}</div>
+                    <div class="price">Giá: ${(product.price * item.quantity).toLocaleString()}₫</div>
+                </div>
+            `;
+            listContainer.appendChild(newItem);
+        }
+    });
+    
+        totalPriceHTML.textContent = `Giá tiền: ${totalPrice.toLocaleString()}₫`;
 
-                if (product) {
-                    // Tính tổng số lượng và tổng tiền
-                    totalQuantity += item.quantity;
-                    totalPrice += product.price * item.quantity;
-
-                    // Tạo phần tử hiển thị sản phẩm trong giỏ hàng
-                    const newCart = document.createElement('div');
-                    newCart.classList.add('item');
-                    newCart.innerHTML = `
-                        <img src="${product.image}" alt="${product.name}">
-                        <div class="info">
-                            <div class="name">${product.name}</div>
-                            <div class="price">${product.price.toLocaleString()}₫ / 1 sản phẩm</div>
-                        </div>
-                        <div class="quantity">${item.quantity}</div>
-                        <div class="returnPrice">${(product.price * item.quantity).toLocaleString()}₫</div>
-                    `;
-                    listCartHTML.appendChild(newCart);
-                }
+        thanhToan.addEventListener('click', () => {
+            alert('Thanh toán thành công.');
+            localStorage.removeItem('cart');
+            if (listContainer) {
+                listContainer.innerHTML = ''; // Xóa toàn bộ nội dung bên trong
             }
+        
+            // Cập nhật lại tổng giá và tổng số lượng (nếu có)
+            const totalQuantityElement = document.querySelector('.totalQuantity');
+            const totalPriceElement = document.querySelector('.totalPrice');
+            if (totalQuantityElement) totalQuantityElement.textContent = 'Số lượng: 0';
+            if (totalPriceElement) totalPriceElement.textContent = 'Giá tiền: 0₫';
         });
-    }
 
-    // Cập nhật tổng số lượng và tổng tiền
-    totalQuantityHTML.innerText = totalQuantity;
-    totalPriceHTML.innerText = totalPrice.toLocaleString() + '₫';
-}
 
-// Hàm tìm sản phẩm dựa trên `id` (sử dụng dữ liệu sản phẩm toàn cục)
-function findProductById(productId) {
-    return products.find(product => product.id === productId);
-}
 
-// Khởi tạo ứng dụng
-function initCheckout() {
-    loadCartFromLocalStorage(); // Lấy dữ liệu giỏ hàng từ Local Storage
-    renderCartToHTML(); // Hiển thị giỏ hàng trên giao diện
-}
-
-// Gọi hàm khởi tạo khi tải trang
-initCheckout();
-*/

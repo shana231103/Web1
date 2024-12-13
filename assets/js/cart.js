@@ -15,6 +15,11 @@ const isUserLoggedIn = () => {
 
 // on/off gio hang
 iconCart.addEventListener('click', () => {
+    const currentUser = localStorage.getItem('currentUser');
+    if (!isUserLoggedIn()) {
+        alert('Bạn chưa đăng nhập.');
+        return;
+    }
     body.classList.toggle('showCart');
 });
 closeCart.addEventListener('click', () => {
@@ -134,7 +139,6 @@ const changeQuantityCart = (productId, type) => {
     addCartToHTML();
     addCartToMemory();
 };
-
 
 const initApp = () => {
     addCartToHTML(); 

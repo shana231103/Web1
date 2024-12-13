@@ -571,19 +571,24 @@ export const products = [
     }
 ];
 
-function initApp(){
+function initApp() {
+    // Lưu danh sách sản phẩm vào localStorage nếu chưa tồn tại
+    if (!localStorage.getItem('products')) {
+        localStorage.setItem('products', JSON.stringify(products));
+    }
+
     list.innerHTML = '';
-    products.forEach((value)=>{
+    products.forEach((value) => {
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img src="${value.image} alt="${value.name}">
+            <img src="${value.image}" alt="${value.name}">
             <div class="name">${value.name}</div>
-            <div class="price">Giá: ${value.price.toLocaleString()}</div>
+            <div class="price">Giá: ${value.price.toLocaleString()}₫</div>
             <div class="sl">Số lượng còn: ${value.sl.toLocaleString()}</div>
             <button class="button" onclick="addToCart(${value.id})">Thêm vào giỏ hàng</button>`;
         list.appendChild(newDiv);
-    })
+    });
 }
 
 initApp();

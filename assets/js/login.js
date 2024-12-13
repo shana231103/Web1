@@ -78,8 +78,9 @@ function displayLoggedInUser(username) {
 
     logoutButton.addEventListener('click', () => {
         localStorage.removeItem('currentUser');
+        localStorage.removeItem('cart');
         alert('Đăng xuất thành công');
-        location.reload(); 
+        location.reload();
     });
 
     // Thêm tên người dùng và nút "Đăng xuất" vào container

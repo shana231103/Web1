@@ -444,6 +444,18 @@ body.showCart .container{
     cursor: pointer;
 }
 
+.cartTab a{
+    background-color: #95c8f7;
+    width: 200px;
+    height: 80px;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .cartTab .close{
     background-color: rgb(186, 183, 183);
 }

@@ -7,7 +7,7 @@ export const products = [
         name: 'Blue-eyes Alternative White Dragon',
         price: 10000,
         sl:13,
-        image: 'assets/card/BE_Alternative.jpg'
+        image: '/assets/card/BE_Alternative.jpg'
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const products = [
         name: 'Blue-eyes Chaos Dragon',
         price: 10000,
         sl:3,
-        image: 'assets/card/BE_Chaos.jpg'
+        image: '/assets/card/BE_Chaos.jpg'
     },
     {
         id: 3,
@@ -23,7 +23,7 @@ export const products = [
         name: 'Blue-eyes Chaos MAX Dragon',
         price: 10000,
         sl:2,
-        image: 'assets/card/BE_Chaos_MAX.jpg'
+        image: '/assets/card/BE_Chaos_MAX.jpg'
     },
     {
         id: 4,
@@ -31,7 +31,7 @@ export const products = [
         name: 'Blue-eyes White Dragon',
         price: 10000,
         sl:4,
-        image: './assets/card/BE_White_Dragon.jpg'
+        image: '/assets/card/BE_White_Dragon.jpg'
     },
     {
         id: 5,
@@ -39,7 +39,7 @@ export const products = [
         name: 'Destiny HERO - Plasma',
         price: 20000,
         sl:4,
-        image: './assets/card/D_Hero_Plasma.jpg'
+        image: '/assets/card/D_Hero_Plasma.jpg'
     },
     {
         id: 6,
@@ -47,7 +47,7 @@ export const products = [
         name: 'Dark Magician',
         price: 10000,
         sl:4,
-        image: './assets/card/Dark_magician.jpg'
+        image: '/assets/card/Dark_magician.jpg'
     },
     {
         id: 7,
@@ -55,7 +55,7 @@ export const products = [
         name: 'Dark Magician Girl',
         price: 10000,
         sl:4,
-        image: './assets/card/Dark_magician_girl.jpg'
+        image: '/assets/card/Dark_magician_girl.jpg'
     },
     {
         id: 8,
@@ -63,7 +63,7 @@ export const products = [
         name: 'Dark Ruler No More',
         price: 10000,
         sl:4,
-        image: './assets/card/Dark_Ruler_No_More.jpg'
+        image: '/assets/card/Dark_Ruler_No_More.jpg'
     },
     {
         id: 9,
@@ -71,7 +71,7 @@ export const products = [
         name: 'Elemental HERO Absolute Zero',
         price: 10000,
         sl:4,
-        image: './assets/card/E_Hero_Absolute_Zero.jpg'
+        image: '/assets/card/E_Hero_Absolute_Zero.jpg'
     },
     {
         id: 10,
@@ -79,7 +79,7 @@ export const products = [
         name: 'Elemental HERO Blazeman',
         price: 10000,
         sl:4,
-        image: './assets/card/E_Hero_Blazeman.jpg'
+        image: '/assets/card/E_Hero_Blazeman.jpg'
     },
     {
         id: 11,
@@ -87,7 +87,7 @@ export const products = [
         name: 'Elemental HERO Escuridao',
         price: 10000,
         sl:4,
-        image: './assets/card/E_Hero_Escuridao.jpg'
+        image: '/assets/card/E_Hero_Escuridao.jpg'
     },
     {
         id: 12,
@@ -95,7 +95,7 @@ export const products = [
         name: 'Elemental HERO Gaia',
         price: 10000,
         sl:4,
-        image: './assets/card/E_Hero_Gaia.jpg'
+        image: '/assets/card/E_Hero_Gaia.jpg'
     },
     {
         id: 13,
@@ -103,7 +103,7 @@ export const products = [
         name: 'Elemental HERO Great Tornado',
         price: 10000,
         sl:4,
-        image: './assets/card/E_Hero_Great_Tornado.jpg'
+        image: '/assets/card/E_Hero_Great_Tornado.jpg'
     },
     {
         id: 14,
@@ -111,7 +111,7 @@ export const products = [
         name: 'Elemental HERO Liquid Solider',
         price: 10000,
         sl:4,
-        image: './assets/card/E_Hero_Liquid_Solider.jpg'
+        image: '/assets/card/E_Hero_Liquid_Solider.jpg'
     },
     {
         id: 15,
@@ -119,7 +119,7 @@ export const products = [
         name: 'Elemental HERO Neos',
         price: 10000,
         sl:4,
-        image: './assets/card/E_Hero_Neos.jpg'
+        image: '/assets/card/E_Hero_Neos.jpg'
     },
     {
         id: 16,
@@ -127,7 +127,7 @@ export const products = [
         name: 'Elemental HERO Prisma',
         price: 10000,
         sl:4,
-        image: './assets/card/E_Hero_Prisma.jpg'
+        image: '/assets/card/E_Hero_Prisma.jpg'
     },
     {
         id: 17,
@@ -135,7 +135,7 @@ export const products = [
         name: 'Elemental HERO Shadow Mist',
         price: 10000,
         sl:4,
-        image: './assets/card/E_Hero_Shadow_Mist.jpg'
+        image: '/assets/card/E_Hero_Shadow_Mist.jpg'
     },
     {
         id: 18,
@@ -143,7 +143,7 @@ export const products = [
         name: 'Effect Veiler',
         price: 10000,
         sl:4,
-        image: './assets/card/Effect_Veiler.jpg'
+        image: '/assets/card/Effect_Veiler.jpg'
     },
     {
         id: 19,
@@ -151,7 +151,7 @@ export const products = [
         name: 'Exodia',
         price: 10000,
         sl:4,
-        image: './assets/card/Exodia.jpg'
+        image: '/assets/card/Exodia.jpg'
     },
     {
         id: 20,
@@ -159,7 +159,7 @@ export const products = [
         name: 'Left Arm Of The Forbidden One ',
         price: 10000,
         sl:4,
-        image: './assets/card/Exodia_Left_Arm.jpg'
+        image: '/assets/card/Exodia_Left_Arm.jpg'
     },
     {
         id: 21,
@@ -167,7 +167,7 @@ export const products = [
         name: 'Left Leg Of The Forbidden One',
         price: 10000,
         sl:4,
-        image: './assets/card/Exodia_Left_Leg.jpg'
+        image: '/assets/card/Exodia_Left_Leg.jpg'
     },
     {
         id: 22,
@@ -175,7 +175,7 @@ export const products = [
         name: 'Right Arm Of The Forbidden One',
         price: 10000,
         sl:4,
-        image: './assets/card/Exodia_Right_Arm.jpg'
+        image: '/assets/card/Exodia_Right_Arm.jpg'
     },
     {
         id: 23,
@@ -183,7 +183,7 @@ export const products = [
         name: 'Right Leg Of The Forbidden One',
         price: 10000,
         sl:4,
-        image: './assets/card/Exodia_Right_Leg.jpg'
+        image: '/assets/card/Exodia_Right_Leg.jpg'
     },
     {
         id: 24,
@@ -191,7 +191,7 @@ export const products = [
         name: 'Galaxy-eyes Afterglow Dragon',
         price: 10000,
         sl:4,
-        image: './assets/card/GE_Afterglow.jpg'
+        image: '/assets/card/GE_Afterglow.jpg'
     },
     {
         id: 25,
@@ -199,7 +199,7 @@ export const products = [
         name: 'Galaxy-eyes Cipher Dragon',
         price: 10000,
         sl:4,
-        image: './assets/card/GE_Cipher.jpg'
+        image: '/assets/card/GE_Cipher.jpg'
     },
     {
         id: 26,
@@ -207,7 +207,7 @@ export const products = [
         name: 'Galaxy-eyes Cipher Blade Dragon',
         price: 10000,
         sl:4,
-        image: './assets/card/GE_CipherBlade.jpg'
+        image: '/assets/card/GE_CipherBlade.jpg'
     },
     {
         id: 27,
@@ -215,7 +215,7 @@ export const products = [
         name: 'Galaxy-eyes CipherX Dragon',
         price: 10000,
         sl:4,
-        image: './assets/card/GE_CipherX.jpg'
+        image: '/assets/card/GE_CipherX.jpg'
     },
     {
         id: 28,
@@ -223,7 +223,7 @@ export const products = [
         name: 'Galaxy-eyes Full Armor Photon Dragon',
         price: 10000,
         sl:4,
-        image: './assets/card/GE_Full_Armor.jpg'
+        image: '/assets/card/GE_Full_Armor.jpg'
     },
     {
         id: 29,
@@ -231,7 +231,7 @@ export const products = [
         name: 'Galaxy-eyes Photon Dragon',
         price: 999999,
         sl:4,
-        image: './assets/card/GE_Photon.jpg'
+        image: '/assets/card/GE_Photon.jpg'
     },
     {
         id: 30,
@@ -239,7 +239,7 @@ export const products = [
         name: 'Infinite Impermanence',
         price: 10000,
         sl:4,
-        image: './assets/card/Infinite_Impermanence.jpg'
+        image: '/assets/card/Infinite_Impermanence.jpg'
     },
     {
         id: 31,
@@ -247,7 +247,7 @@ export const products = [
         name: 'Junkuriboh',
         price: 10000,
         sl:4,
-        image: './assets/card/junkuriboh.jpg'
+        image: '/assets/card/junkuriboh.jpg'
     },
     {
         id: 32,
@@ -255,7 +255,7 @@ export const products = [
         name: 'Kuriboh',
         price: 300000,
         sl:4,
-        image: './assets/card/kuriboh.jpg'
+        image: '/assets/card/kuriboh.jpg'
     },
     {
         id: 33,
@@ -263,7 +263,7 @@ export const products = [
         name: 'Linkuriboh',
         price: 10000,
         sl:4,
-        image: './assets/card/linkuriboh.jpg'
+        image: '/assets/card/linkuriboh.jpg'
     },
     {
         id: 34,
@@ -271,7 +271,7 @@ export const products = [
         name: 'Monster Reborn',
         price: 10000,
         sl:4,
-        image: './assets/card/Monster_Reborn.jpg'
+        image: '/assets/card/Monster_Reborn.jpg'
     },
     {
         id: 35,
@@ -279,7 +279,7 @@ export const products = [
         name: 'Mystical Space Typhoon',
         price: 10000,
         sl:4,
-        image: './assets/card/MST.jpg'
+        image: '/assets/card/MST.jpg'
     },
     {
         id: 36,
@@ -287,7 +287,7 @@ export const products = [
         name: 'Neo Galaxy-Eyes Cipher Dragon',
         price: 10000,
         sl:4,
-        image: './assets/card/Neo_GE_Cipher.jpg'
+        image: '/assets/card/Neo_GE_Cipher.jpg'
     },
     {
         id: 37,
@@ -295,7 +295,7 @@ export const products = [
         name: 'Neo Galaxy-Eyes Photon Dragon',
         price: 44444,
         sl:4,
-        image: './assets/card/Neo_GE_Photon.jpg'
+        image: '/assets/card/Neo_GE_Photon.jpg'
     },
     {
         id: 38,
@@ -303,7 +303,7 @@ export const products = [
         name: 'Nibiru, The Primal Being',
         price: 10000,
         sl:4,
-        image: './assets/card/Nibiru.jpg'
+        image: '/assets/card/Nibiru.jpg'
     },
     {
         id: 39,
@@ -311,7 +311,7 @@ export const products = [
         name: 'Number 62: Galaxy-Eyes Prime Photon Dragon',
         price: 10000,
         sl:4,
-        image: './assets/card/Number_62.jpg'
+        image: '/assets/card/Number_62.jpg'
     },
     {
         id: 40,
@@ -319,7 +319,7 @@ export const products = [
         name: 'Number 73: Abyss Splash',
         price: 10000,
         sl:4,
-        image: './assets/card/Number_73.jpg'
+        image: '/assets/card/Number_73.jpg'
     },
     {
         id: 41,
@@ -327,7 +327,7 @@ export const products = [
         name: 'Number 100: Numeron Dragon',
         price: 10000,
         sl:4,
-        image: './assets/card/Number_100.jpg'
+        image: '/assets/card/Number_100.jpg'
     },
     {
         id: 42,
@@ -335,7 +335,7 @@ export const products = [
         name: 'Number 101: Silent Honor ARK',
         price: 101010,
         sl:1,
-        image: './assets/card/Number_101.jpg'
+        image: '/assets/card/Number_101.jpg'
     },
     {
         id: 43,
@@ -343,7 +343,7 @@ export const products = [
         name: 'Number 102: Star Seraph Sentry',
         price: 10000,
         sl:4,
-        image: './assets/card/Number_102.jpg'
+        image: '/assets/card/Number_102.jpg'
     },
     {
         id: 44,
@@ -351,7 +351,7 @@ export const products = [
         name: 'Number 103: Ragnazero',
         price: 10000,
         sl:4,
-        image: './assets/card/Number_103.jpg'
+        image: '/assets/card/Number_103.jpg'
     },
     {
         id: 45,
@@ -359,7 +359,7 @@ export const products = [
         name: 'Number 104: Masquerade',
         price: 10000,
         sl:4,
-        image: './assets/card/Number_104.jpg'
+        image: '/assets/card/Number_104.jpg'
     },
     {
         id: 46,
@@ -367,7 +367,7 @@ export const products = [
         name: "Number 105: Battlin' Boxer Star Cestus",
         price: 10000,
         sl:4,
-        image: './assets/card/Number_105.jpg'
+        image: '/assets/card/Number_105.jpg'
     },
     {
         id: 47,
@@ -375,7 +375,7 @@ export const products = [
         name: 'Number 106: Giant Hand',
         price: 10000,
         sl:4,
-        image: './assets/card/Number_106.jpg'
+        image: '/assets/card/Number_106.jpg'
     },
     {
         id: 48,
@@ -383,7 +383,7 @@ export const products = [
         name: 'Number 107: Galaxy-Eyes Tachyon Dragon',
         price: 107701,
         sl:107,
-        image: './assets/card/Number_107.jpg'
+        image: '/assets/card/Number_107.jpg'
     },
     {
         id: 49,
@@ -391,7 +391,7 @@ export const products = [
         name: 'Number C73: Abyss Supra Splash',
         price: 10000,
         sl:4,
-        image: './assets/card/Number_C73.jpg'
+        image: '/assets/card/Number_C73.jpg'
     },
     {
         id: 50,
@@ -399,7 +399,7 @@ export const products = [
         name: 'Number C101: Silent Honor DARK',
         price: 101101,
         sl:111,
-        image: './assets/card/Number_C101.jpg'
+        image: '/assets/card/Number_C101.jpg'
     },
     {
         id: 51,
@@ -407,7 +407,7 @@ export const products = [
         name: 'Number C102: Archfiend Seraph',
         price: 10000,
         sl:4,
-        image: './assets/card/Number_C102.jpg'
+        image: '/assets/card/Number_C102.jpg'
     },
     {
         id: 52,
@@ -415,7 +415,7 @@ export const products = [
         name: 'Number C103: Ragnafinity',
         price: 10000,
         sl:4,
-        image: './assets/card/Number_C103.jpg'
+        image: '/assets/card/Number_C103.jpg'
     },
     {
         id: 53,
@@ -423,7 +423,7 @@ export const products = [
         name: 'Number C104: Umbral Horror Masquerade',
         price: 10000,
         sl:4,
-        image: './assets/card/Number_C104.jpg'
+        image: '/assets/card/Number_C104.jpg'
     },
     {
         id: 54,
@@ -431,7 +431,7 @@ export const products = [
         name: "Number C105: Battlin' Boxer Comet Cestus",
         price: 10000,
         sl:105,
-        image: './assets/card/Number_C105.jpg'
+        image: '/assets/card/Number_C105.jpg'
     },
     {
         id: 55,
@@ -439,7 +439,7 @@ export const products = [
         name: 'Number C106: Giant Red Hand',
         price: 10000,
         sl:106,
-        image: './assets/card/Number_C106.jpg'
+        image: '/assets/card/Number_C106.jpg'
     },
     {
         id: 56,
@@ -447,7 +447,7 @@ export const products = [
         name: 'Number C107: Neo Galaxy-Eyes Tachyon Dragon',
         price: 107000,
         sl:107,
-        image: './assets/card/Number_C107.jpg'
+        image: '/assets/card/Number_C107.jpg'
     },
     {
         id: 57,
@@ -455,7 +455,7 @@ export const products = [
         name: 'Obelisk The Tormentor',
         price: 10000,
         sl:4,
-        image: './assets/card/Obelisk.jpg'
+        image: '/assets/card/Obelisk.jpg'
     },
     {
         id: 58,
@@ -463,7 +463,7 @@ export const products = [
         name: 'Polymerization',
         price: 696969,
         sl:4,
-        image: './assets/card/Polymerization.jpg'
+        image: '/assets/card/Polymerization.jpg'
     },
     {
         id: 59,
@@ -471,7 +471,7 @@ export const products = [
         name: 'Pot Of Greed',
         price: 22222,
         sl:4,
-        image: './assets/card/pot_of_greed.jpg'
+        image: '/assets/card/pot_of_greed.jpg'
     },
     {
         id: 60,
@@ -479,7 +479,7 @@ export const products = [
         name: 'The Winged Dragon of Ra',
         price: 10000,
         sl:4,
-        image: './assets/card/Ra.jpg'
+        image: '/assets/card/Ra.jpg'
     },
     {
         id: 61,
@@ -487,7 +487,7 @@ export const products = [
         name: 'Red-Eyes Black Dragon',
         price: 10000,
         sl:4,
-        image: './assets/card/RE_Black.jpg'
+        image: '/assets/card/RE_Black.jpg'
     },
     {
         id: 62,
@@ -495,7 +495,7 @@ export const products = [
         name: 'Red Dragon Archfiend',
         price: 10000,
         sl:4,
-        image: './assets/card/Red_Demon_Drag.jpg'
+        image: '/assets/card/Red_Demon_Drag.jpg'
     },
     {
         id: 63,
@@ -503,7 +503,7 @@ export const products = [
         name: 'Relinkuriboh',
         price: 10000,
         sl:4,
-        image: './assets/card/Relinkuriboh.jpg'
+        image: '/assets/card/Relinkuriboh.jpg'
     },
     {
         id: 64,
@@ -511,7 +511,7 @@ export const products = [
         name: 'Rank-Up-Magic - The Seventh One',
         price: 777777,
         sl:4,
-        image: './assets/card/RUM_7th.jpg'
+        image: '/assets/card/RUM_7th.jpg'
     },
     {
         id: 65,
@@ -519,7 +519,7 @@ export const products = [
         name: 'Slifer the Sky Dragon',
         price: 10000,
         sl:4,
-        image: './assets/card/Slifer.jpg'
+        image: '/assets/card/Slifer.jpg'
     },
     {
         id: 66,
@@ -527,7 +527,7 @@ export const products = [
         name: 'Sphere Kuriboh',
         price: 10000,
         sl:4,
-        image: './assets/card/sphere_kuriboh.jpg'
+        image: '/assets/card/sphere_kuriboh.jpg'
     },
     {
         id: 67,
@@ -535,7 +535,7 @@ export const products = [
         name: 'Stardust Dragon',
         price: 10000,
         sl:4,
-        image: './assets/card/Stardust_Drag.jpg'
+        image: '/assets/card/Stardust_Drag.jpg'
     },
     {
         id: 68,
@@ -543,7 +543,7 @@ export const products = [
         name: 'Super Polymerization',
         price: 696969,
         sl:4,
-        image: './assets/card/Super_Poly.jpg'
+        image: '/assets/card/Super_Poly.jpg'
     },
     {
         id: 69,
@@ -551,7 +551,7 @@ export const products = [
         name: 'The Flute of Summoning Kuriboh',
         price: 369369,
         sl:4,
-        image: './assets/card/the_flute_of_summoning_kuriboh.jpg'
+        image: '/assets/card/the_flute_of_summoning_kuriboh.jpg'
     },
     {
         id: 70,
@@ -559,7 +559,7 @@ export const products = [
         name: 'Winged Kuriboh',
         price: 999999,
         sl:0,
-        image: './assets/card/winged_kuriboh.jpg'
+        image: '/assets/card/winged_kuriboh.jpg'
     },
     {
         id: 71,
@@ -567,7 +567,7 @@ export const products = [
         name: 'Mirror Force',
         price: 10000,
         sl:3,
-        image: './assets/card/Mirror_Force.jpg'
+        image: '/assets/card/Mirror_Force.jpg'
     }
 ];
 

@@ -1,10 +1,14 @@
     const listContainer = document.querySelector('.list'); 
     const totalPriceHTML = document.querySelector('.totalPrice');
-    const thanhToan = document.querySelector('.buttonCheckout');  
-
-    // Lấy giỏ hàng từ localStorage
+    const thanhToan = document.querySelector('.buttonCheckout'); 
+    // cart tu local
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     const products = JSON.parse(localStorage.getItem('products')) || [];
+
+    const isUserLoggedIn = () => {
+        const currentUser = localStorage.getItem('currentUser');
+        return currentUser !== null;
+    };
 
     let totalQuantity = 0;
     let totalPrice = 0; 
@@ -35,19 +39,21 @@
     
         totalPriceHTML.textContent = `Giá tiền: ${totalPrice.toLocaleString()}₫`;
 
-        thanhToan.addEventListener('click', () => {
-            alert('Thanh toán thành công.');
-            localStorage.removeItem('cart');
-            if (listContainer) {
-                listContainer.innerHTML = ''; // Xóa toàn bộ nội dung bên trong
-            }
-        
-            // Cập nhật lại tổng giá và tổng số lượng (nếu có)
-            const totalQuantityElement = document.querySelector('.totalQuantity');
-            const totalPriceElement = document.querySelector('.totalPrice');
-            if (totalQuantityElement) totalQuantityElement.textContent = 'Số lượng: 0';
-            if (totalPriceElement) totalPriceElement.textContent = 'Giá tiền: 0₫';
+    thanhToan.addEventListener('click', () => {
+        alert('Thanh toán thành công.');
+        localStorage.removeItem('cart');
+        localStorage.removeItem('currentUser');
+        if (listContainer) {
+            listContainer.innerHTML = '';
+        }
+    
+        const totalQuantityElement = document.querySelector('.totalQuantity');
+        const totalPriceElement = document.querySelector('.totalPrice');
+        if (totalQuantityElement) totalQuantityElement.textContent = 'Số lượng: 0';
+        if (totalPriceElement) totalPriceElement.textContent = 'Giá tiền: 0₫';
+
+        const formInputs = document.querySelectorAll('.form input'); // Chọn tất cả input trong form
+        formInputs.forEach(input => {
+            input.value = ''; // Đặt lại giá trị của từng input về rỗng
         });
-
-
-
+    });

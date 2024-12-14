@@ -1,6 +1,6 @@
 function toggleContainer(event, containerId) {
     if (event) {
-        event.preventDefault(); // Ngăn hành vi mặc định
+        event.preventDefault();
         event.stopPropagation();
     }
     const container = document.getElementById(containerId);
@@ -58,20 +58,18 @@ function checkSignIn() {
 }
 
 function displayLoggedInUser(username) {
-    // Ẩn các nút "Đăng nhập" và "Đăng ký"
     const loginBtn = document.querySelector('.login-btn');
     const registerBtn = document.querySelector('.register-btn');
     loginBtn.style.display = 'none';
     registerBtn.style.display = 'none';
 
-    // Tạo container hiển thị tên người dùng và nút đăng xuất
     const userContainer = document.createElement('div');
     userContainer.classList.add('user-container');
-    // Hiển thị tên người dùng
+
     const userDisplay = document.createElement('div');
     userDisplay.classList.add('user-display');
     userDisplay.innerHTML = `Xin chào <br> <b>${username}</b> </br>`;
-    // Tạo nút "Đăng xuất"
+
     const logoutButton = document.createElement('button');
     logoutButton.classList.add('logout-btn');
     logoutButton.innerText = 'Đăng xuất';
@@ -87,7 +85,6 @@ function displayLoggedInUser(username) {
     userContainer.appendChild(userDisplay);
     userContainer.appendChild(logoutButton);
 
-    // Thêm container vào header
     const headerMain = document.querySelector('.header-main');
-    headerMain.appendChild(userContainer); // Thêm container vào header
+    headerMain.appendChild(userContainer); 
 }

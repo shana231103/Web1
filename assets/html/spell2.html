@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shana TCG Shop</title>
+    <link rel="stylesheet" href="/assets/style/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <p>Shana TCG Shop - Thẻ bài Yu-Gi-Oh! & Phụ kiện Card Game</p> 
+        </div>
+        <div class="header-main">
+            <div class="header-logo">
+                <img src="/assets/icon/IMG_0990.jpg" alt="">
+            </div>
+            <div class="search-bar">
+                <input name="name" type="text"  placeholder="Tìm kiếm sản phẩm">
+                <button id="find" type="submit"><img src="/assets/icon/search.png" alt="">
+                </button>
+            </div>
+            <div class="cart">
+                <button type="button" href=""><img src="/assets/icon/shopping-cart.png" alt="">
+                </button>
+            </div>
+            <div class="logout-btn">
+                <a href="/index.html"><button class="logout">Đăng xuất</button></a>
+            </div>
+        </div>
+    </header>
+
+    <div id="wp-products">
+        <div class="container">
+        <div class="filter">
+            <div class="filter-item">
+                <label style="font-style: italic;">Lọc theo Card type: </label>
+                <a href="/assets/html/mons2.html" class="filter-link">Monster Card</a>
+                <a href="/assets/html/spell2.html" class="filter-link">Spell Card</a>
+                <a href="/assets/html/trap2.html" class="filter-link">Trap Card</a>
+            </div>
+            <a href="/assets/html/index2.html" class="filter-del">Xóa bộ lọc</a>
+            <div class="filter-item">
+                <label>Lọc theo giá tiền: </label>
+                <a href="/assets/html/up2.html" class="filter-link">Giá từ thấp lên cao</a>
+                <a href="/assets/html/down2.html" class="filter-link">Giá từ cao xuống thấp</a>
+            </div>
+        </div>
+        </div>
+
+        <div class="list">
+            <section id="page1">
+                <div class="item">
+                    <div class="img">
+                        <img src="/assets/card/Monster_Reborn.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="name">Monster Reborn</div>
+                        <div class="price">Giá tiền: 10,000</div>
+                        <div class="sl">Số lượng còn: 2</div>
+                        <button class="addToCart">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="/assets/card/Polymerization.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="name">Polymerization</div>
+                        <div class="price">Giá tiền: 10,000</div>
+                        <div class="sl">Số lượng còn: 2</div>
+                        <button class="addToCart" id="addToCart">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="/assets/card/pot_of_greed.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="name">Pot Of Greed</div>
+                        <div class="price">Giá tiền: 10,000</div>
+                        <div class="sl">Số lượng còn: 2</div>
+                        <button class="addToCart" id="addToCart">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+        </section>
+
+        <section id="page2">
+            <div class="item">
+                <div class="img">
+                    <img src="/assets/card/Super_Poly.jpg">
+                </div>
+                <div class="content">
+                    <div class="name">Super Polymerization</div>
+                    <div class="price">Giá tiền: 69,690</div>
+                    <div class="sl">Số lượng còn: 4</div>
+                    <button class="addToCart" id="addToCart">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </section>
+    </div>
+        
+    <ul class="listPage">
+        <li><a href="#page1">1</a></li>
+        <li><a href="#page2">2</a></li>
+    </ul>
+
+</div>
+
+    <div id="footer">
+        <div class="footer-content">
+          <img class="footer-logo" src="/assets/icon/IMG_0990.jpg" alt="">
+          <div class="copyright">
+            <p>© Copyright 2024 Shana TCG Shop · Designed by Shana</p>
+          </div>
+        </div>
+    </div>
+    <script>
+        const addToCartButtons = document.querySelectorAll('.addToCart');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Đã thêm vào giỏ hàng');
+            });
+        });
+        </script>
+
+</body>
+</html>

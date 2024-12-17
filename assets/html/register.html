@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="/assets/style/login.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Đăng Ký</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Tên đăng nhập</label>
+                <input type="text" id="username" placeholder="Nhập tên đăng nhập" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Mật khẩu</label>
+                <input type="password" id="password" placeholder="Nhập mật khẩu" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Nhập lại mật khẩu</label>
+                <input type="password" id="password" placeholder="Nhập lại mật khẩu" required>
+            </div>
+            <button type="button" class="btn" id="register">Đăng Ký</button>
+            <div class="register">Đã có tài khoản? <a href="login.html">Đăng Nhập</a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('register').addEventListener('click', function () {
+            alert('Đăng ký thành công, hãy đăng nhập');
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+</html>

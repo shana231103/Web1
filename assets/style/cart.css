@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    font-synthesis: 15px;
+}
+
+a{
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header-top {
+    font-family: Arial, sans-serif;
+    background-color: rgb(202, 201, 201);
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+
+
+.container{
+    width: 1300px;
+    margin: auto;
+}
+
+.returnCart a{
+    margin-top: 13px;
+    font-family: monospace;
+}
+
+.returnCart h1{
+    margin-top: 13px;
+    margin-bottom: 13px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.details{
+    padding-left: 13px;
+    font-size:x-large;
+}
+
+.item .name {
+    font-weight: bold; 
+    color: #333;
+    font-size: xx-large; 
+}
+
+.quantity{
+    display: flex;
+}
+
+.quantity span{
+    text-align: center;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-color: #898484;
+    border-radius: 50%;
+    color: #000000;
+    cursor: pointer;
+}
+
+.quantity span:nth-child(2){
+    background-color: transparent;
+    color: #040202;
+    cursor: auto;
+}
+
+.item .quantity {
+    color: #555;
+}
+
+.item .price {
+    color: #E91E63;
+    font-weight: bold;
+}
+
+.btnCheckout{
+    position: relative;
+    background-color: #696bfa;
+    width: 650px;
+    margin-left: 325px;
+    margin-bottom: 31px;
+    margin-top: 13px;
+    border-radius: 10px;
+    font-weight: bold;
+    height: 50px;
+    border: none;
+    box-shadow: 0 10px 20px #69faeb99;
+    transition: 0.5s;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: rgb(202, 201, 201);
+}
+
+.footer-content {
+    background-color: rgb(202, 201, 201);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif
+}
+
+.footer-logo {
+    margin: 18px;
+    width: 10%;
+    min-width: 180px;
+}

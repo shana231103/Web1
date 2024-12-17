@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/assets/style/checkout.css">
+    <link rel="stylesheet" href="/assets/style/cart.css">
 </head>
 <body>
     <div class="header-top">
@@ -13,79 +13,71 @@
 
 <div class="container">
     <div class="checkoutLayout">
-
         <div class="returnCart">
-            <a href="/index.html">Trang chủ</a><br>
-            <a href="/assets/html/cart.html">Quay về giỏ hàng</a>
+            <a href="/assets/html/index2.html">Trang chủ</a><br>
             <h1>Các sản phẩm trong giỏ hàng</h1>
             <div class="list">
                 <div class="item">
                     <div class="image">
-                        <img src="/assets/card/Super_Poly.jpg" style="width: 50px; height: auto;">
+                        <img src="/assets/card/Super_Poly.jpg" style="width: 80px; height: auto;">
                     </div>
                     <div class="details">
                         <div class="name">Super Polymerization</div>
-                        <div class="quantity">Số lượng: 2</div>
                         <div class="price">Giá: 139,380</div>
+                        <div class="quantity">
+                            <span class="minus">-</span>
+                            <div class="quantity">Số lượng: 2</div>
+                            <span class="plus">+</span>
+                        </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="image">
-                        <img src="/assets/card/winged_kuriboh.jpg" style="width: 50px; height: auto;">
+                        <img src="/assets/card/winged_kuriboh.jpg" style="width: 80px; height: auto;">
                     </div>
                     <div class="details">
                         <div class="name">Winged Kuriboh</div>
-                        <div class="quantity">Số lượng: 1</div>
-                        <div class="price">Giá: 99,999</div>
+                        <div class="price">Giá: 139,380</div>
+                        <div class="quantity">
+                            <span class="minus">-</span>
+                            <div class="quantity">Số lượng: 2</div>
+                            <span class="plus">+</span>
+                        </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="image">
-                        <img src="/assets/card/Number_107.jpg" style="width: 50px; height: auto;">
+                        <img src="/assets/card/Number_107.jpg" style="width: 80px; height: auto;">
                     </div>
                     <div class="details">
                         <div class="name">Number 107: Galaxy-Eyes Tachyon Dragon</div>
-                        <div class="quantity">Số lượng: 1</div>
                         <div class="price">Giá: 30,000</div>
+                        <div class="quantity">
+                            <span class="minus">-</span>
+                            <div class="quantity">Số lượng: 2</div>
+                            <span class="plus">+</span>
+                        </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="image">
-                        <img src="/assets/card/GE_Photon.jpg" style="width: 50px; height: auto;">
+                        <img src="/assets/card/GE_Photon.jpg" style="width: 80px; height: auto;">
                     </div>
                     <div class="details">
                         <div class="name">Galaxy-Eyes Photon Dragon</div>
-                        <div class="quantity">Số lượng: 1</div>
                         <div class="price">Giá: 10,000</div>
+                        <div class="quantity">
+                            <span class="minus">-</span>
+                            <div class="quantity">Số lượng: 2</div>
+                            <span class="plus">+</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-        <div class="right">
-            <h1 style="margin-bottom: 13px; text-align: center ;">Thanh toán</h1>
-            <div class="form">
-                <div class="group">
-                    <label for="name">Tên</label>
-                    <input type="text" name="name" id="name">
-                </div>   
-                <div class="group">
-                    <label for="phone">Số điện thoại</label>
-                    <input type="text" name="phone" id="phone">
-                </div>
-                <div class="group">
-                    <label for="address">Địa chỉ</label>
-                    <input type="text" name="address" id="address">
-                </div>
-            </div>
-             <div class="return">
-                <div class="row">
-                    <div class="totalPrice">Giá tiền: 279,379đ</div>
-                </div>
-            </div>
-            <button class="buttonCheckout">Thanh toán</button>
-            </div>
+        <a href="/assets/html/thanhtoan.html">
+            <button class="btnCheckout">Thanh toán</button>
+        </a>
     </div>
 </div>
 

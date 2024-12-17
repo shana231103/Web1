@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shana TCG Shop</title>
-    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="/assets/style/style.css">
 </head>
 
 <body>
@@ -23,38 +23,35 @@
                 </button>
             </div>
             <div class="cart">
-                <button id="cart" type="button" href=""><img src="/assets/icon/shopping-cart.png" alt="">
+                <button type="button" href=""><img src="/assets/icon/shopping-cart.png" alt="">
                 </button>
             </div>
-            <div class="login-btn">
-                <a href="/assets/html/login.html"><button class="login">Đăng nhập</button></a>
+            <div class="logout-btn">
+                <a href="/index.html"><button class="logout">Đăng xuất</button></a>
             </div>
-            <div class="register-btn">
-                <a href="/assets/html/register.html"><button class="register">Đăng ký</button></a>
-            </div>          
-            </div>  
+        </div>  
     </header>
 
     <div id="wp-products">
         <div class="container">
-            <div class="filter">
-                <div class="filter-item">
-                    <label style="font-style: italic;">Lọc theo Card type: </label>
-                    <a href="#monster" class="filter-link">Monster Card</a>
-                    <a href="#spell" class="filter-link">Spell Card</a>
-                    <a href="#trap" class="filter-link">Trap Card</a>
-                </div>
-                <a href="#delete" class="filter-del">Xóa bộ lọc</a>
-                <div class="filter-item">
-                    <label>Lọc theo giá tiền: </label>
-                    <a href="#up" class="filter-link">Giá từ thấp lên cao</a>
-                    <a href="#down" class="filter-link">Giá từ cao xuống thấp</a>
-                </div>
+        <div class="filter">
+            <div class="filter-item">
+                <label style="font-style: italic;">Lọc theo Card type: </label>
+                <a href="/assets/html/mons2.html" class="filter-link">Monster Card</a>
+                <a href="/assets/html/spell2.html" class="filter-link">Spell Card</a>
+                <a href="/assets/html/trap2.html" class="filter-link">Trap Card</a>
             </div>
+            <a href="#delete" class="filter-del">Xóa bộ lọc</a>
+            <div class="filter-item">
+                <label>Lọc theo giá tiền: </label>
+                <a href="#up" class="filter-link">Giá từ thấp lên cao</a>
+                <a href="#down" class="filter-link">Giá từ cao xuống thấp</a>
             </div>
+        </div>
+        </div>
 
-    <div class="list">
-        <section id="page1">
+        <div class="list">
+            <section id="page1">
             <div class="item">
                 <div class="img">
                     <img src="/assets/card/BE_White_Dragon.jpg">
@@ -63,7 +60,7 @@
                     <div class="name">Blue-eyes White Dragon</div>
                     <div class="price">Giá tiền: 10,000</div>
                     <div class="sl">Số lượng còn: 2</div>
-                    <button class="addToCart" id="addToCart">Thêm vào giỏ hàng</button>
+                    <button class="addToCart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
             <div class="item">
@@ -74,7 +71,7 @@
                     <div class="name">Dark Magician</div>
                     <div class="price">Giá tiền: 10,000</div>
                     <div class="sl">Số lượng còn: 2</div>
-                    <button class="addToCart" id="addToCart">Thêm vào giỏ hàng</button>
+                    <button class="addToCart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
             <div class="item">
@@ -85,12 +82,12 @@
                     <div class="name">Elemental Hero Neos</div>
                     <div class="price">Giá tiền: 10,000</div>
                     <div class="sl">Số lượng còn: 2</div>
-                    <button class="addToCart" id="addToCart">Thêm vào giỏ hàng</button>
+                    <button class="addToCart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
         </section>
 
-        <section id="page2">
+            <section id="page2">
             <div class="item">
                 <div class="img">
                     <img src="/assets/card/GE_Photon.jpg">
@@ -99,7 +96,7 @@
                     <div class="name">Galaxy-Eyes Photon Dragon</div>
                     <div class="price">Giá tiền: 10,000</div>
                     <div class="sl">Số lượng còn: 2</div>
-                    <button class="addToCart" id="addToCart">Thêm vào giỏ hàng</button>
+                    <button class="addToCart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
             <div class="item">
@@ -110,7 +107,7 @@
                     <div class="name">Kuriboh</div>
                     <div class="price">Giá tiền: 10,000</div>
                     <div class="sl">Số lượng còn: 2</div>
-                    <button class="addToCart" id="addToCart">Thêm vào giỏ hàng</button>
+                    <button class="addToCart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
             <div class="item">
@@ -121,12 +118,12 @@
                     <div class="name">Mirror Force</div>
                     <div class="price">Giá tiền: 10,000</div>
                     <div class="sl">Số lượng còn: 2</div>
-                    <button class="addToCart" id="addToCart">Thêm vào giỏ hàng</button>
+                    <button class="addToCart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
-        </section>
+            </section>
 
-        <section id="page3">
+            <section id="page3">
             <div class="item">
                 <div class="img">
                     <img src="/assets/card/Monster_Reborn.jpg">
@@ -135,7 +132,7 @@
                     <div class="name">Monster Reborn</div>
                     <div class="price">Giá tiền: 10,000</div>
                     <div class="sl">Số lượng còn: 2</div>
-                    <button class="addToCart" id="addToCart">Thêm vào giỏ hàng</button>
+                    <button class="addToCart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
             <div class="item">
@@ -146,7 +143,7 @@
                     <div class="name">Number 101: Silent Honor ARK</div>
                     <div class="price">Giá tiền: 40,000</div>
                     <div class="sl">Số lượng còn: 2</div>
-                    <button class="addToCart" id="addToCart">Thêm vào giỏ hàng</button>
+                    <button class="addToCart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
             <div class="item">
@@ -157,12 +154,12 @@
                     <div class="name">Number 107: Galaxy-Eyes Tachyon Dragon</div>
                     <div class="price">Giá tiền: 30,000</div>
                     <div class="sl">Số lượng còn: 2</div>
-                    <button class="addToCart" id="addToCart">Thêm vào giỏ hàng</button>
+                    <button class="addToCart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
-        </section>
+            </section>
 
-        <section id="page4">
+            <section id="page4">
             <div class="item">
                 <div class="img">
                     <img src="/assets/card/Polymerization.jpg">
@@ -171,7 +168,7 @@
                     <div class="name">Polymerization</div>
                     <div class="price">Giá tiền: 10,000</div>
                     <div class="sl">Số lượng còn: 2</div>
-                    <button class="addToCart" id="addToCart">Thêm vào giỏ hàng</button>
+                    <button class="addToCart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
             <div class="item">
@@ -182,7 +179,7 @@
                     <div class="name">Pot Of Greed</div>
                     <div class="price">Giá tiền: 10,000</div>
                     <div class="sl">Số lượng còn: 2</div>
-                    <button class="addToCart" id="addToCart">Thêm vào giỏ hàng</button>
+                    <button class="addToCart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
             <div class="item">
@@ -193,12 +190,12 @@
                     <div class="name">Super Polymerization</div>
                     <div class="price">Giá tiền: 69,690</div>
                     <div class="sl">Số lượng còn: 4</div>
-                    <button class="addToCart" id="addToCart">Thêm vào giỏ hàng</button>
+                    <button class="addToCart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
         </section>
 
-        <section id="page5">
+            <section id="page5">
             <div class="item">
                 <div class="img">
                     <img src="/assets/card/winged_kuriboh.jpg">
@@ -207,21 +204,20 @@
                     <div class="name">Winged Kuriboh</div>
                     <div class="price">Giá tiền: 99,999</div>
                     <div class="sl">Số lượng còn: 4</div>
-                    <button class="addToCart" id="addToCart">Thêm vào giỏ hàng</button>
+                    <button class="addToCart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
-        </section>
+            </section>
+        </div>
+        
+        <ul class="listPage">
+            <li><a href="#page1">1</a></li>
+            <li><a href="#page2">2</a></li>
+            <li><a href="#page3">3</a></li>
+            <li><a href="#page4">4</a></li>
+            <li><a href="#page5">5</a></li>
+        </ul>
     </div>
-
-    <ul class="listPage">
-        <li><a href="#page1">1</a></li>
-        <li><a href="#page2">2</a></li>
-        <li><a href="#page3">3</a></li>
-        <li><a href="#page4">4</a></li>
-        <li><a href="#page5">5</a></li>
-    </ul>
-
-</div>
 
     <div id="footer">
         <div class="footer-content">
@@ -231,20 +227,14 @@
           </div>
         </div>
     </div>
-    
     <script>
-    const addToCartButtons = document.querySelectorAll('.addToCart');
-    addToCartButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            alert('Bạn chưa đăng nhập');
+        const addToCartButtons = document.querySelectorAll('.addToCart');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Đã thêm vào giỏ hàng');
+            });
         });
-    });
-    document.getElementById('find').addEventListener('click', function () {
-        alert('Bạn chưa đăng nhập');
-    });
-    document.getElementById('cart').addEventListener('click', function () {
-        alert('Bạn chưa đăng nhập');
-    });
-    </script>
+        </script>
+
 </body>
 </html>

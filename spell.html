@@ -27,10 +27,10 @@
                 </button>
             </div>
             <div class="login-btn">
-                <a href="./assets/html/login.html"><button class="login">Đăng nhập</button></a>
+                <a href="login.html"><button class="login">Đăng nhập</button></a>
             </div>
             <div class="register-btn">
-                <a href="./assets/html/register.html"><button class="register">Đăng ký</button></a>
+                <a href="register.html"><button class="register">Đăng ký</button></a>
             </div> 
         </div>
     </header>
@@ -40,29 +40,65 @@
         <div class="filter">
             <div class="filter-item">
                 <label style="font-style: italic;">Lọc theo Card type: </label>
-                <a href="./assets/html/mons.html" class="filter-link">Monster Card</a>
-                <a href="./assets/html/spell.html" class="filter-link">Spell Card</a>
-                <a href="./assets/html/trap.html" class="filter-link">Trap Card</a>
+                <a href="mons.html" class="filter-link">Monster Card</a>
+                <a href="spell.html" class="filter-link">Spell Card</a>
+                <a href="trap.html" class="filter-link">Trap Card</a>
             </div>
-            <a href="./assets/html/index.html" class="filter-del">Xóa bộ lọc</a>
+            <a href="index.html" class="filter-del">Xóa bộ lọc</a>
             <div class="filter-item">
                 <label>Lọc theo giá tiền: </label>
-                <a href="./assets/html/up.html" class="filter-link">Giá từ thấp lên cao</a>
-                <a href="./assets/html/down.html" class="filter-link">Giá từ cao xuống thấp</a>
+                <a href="up.html" class="filter-link">Giá từ thấp lên cao</a>
+                <a href="down.html" class="filter-link">Giá từ cao xuống thấp</a>
             </div>
         </div>
         </div>
 
         <div class="list">
-        <section id="page1">
+            <section id="page1">
+                <div class="item">
+                    <div class="img">
+                        <img src="./assets/card/Monster_Reborn.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="name">Monster Reborn</div>
+                        <div class="price">Giá tiền: 10,000</div>
+                        <div class="sl">Số lượng còn: 2</div>
+                        <button class="addToCart">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./assets/card/Polymerization.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="name">Polymerization</div>
+                        <div class="price">Giá tiền: 10,000</div>
+                        <div class="sl">Số lượng còn: 2</div>
+                        <button class="addToCart" id="addToCart">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="./assets/card/pot_of_greed.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="name">Pot Of Greed</div>
+                        <div class="price">Giá tiền: 10,000</div>
+                        <div class="sl">Số lượng còn: 2</div>
+                        <button class="addToCart" id="addToCart">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+        </section>
+
+        <section id="page2">
             <div class="item">
                 <div class="img">
-                    <img src="./assets/card/Mirror_Force.jpg">
+                    <img src="./assets/card/Super_Poly.jpg">
                 </div>
                 <div class="content">
-                    <div class="name">Mirror Force</div>
-                    <div class="price">Giá tiền: 10,000</div>
-                    <div class="sl">Số lượng còn: 2</div>
+                    <div class="name">Super Polymerization</div>
+                    <div class="price">Giá tiền: 69,690</div>
+                    <div class="sl">Số lượng còn: 4</div>
                     <button class="addToCart" id="addToCart">Thêm vào giỏ hàng</button>
                 </div>
             </div>
@@ -71,6 +107,7 @@
         
     <ul class="listPage">
         <li><a href="#page1">1</a></li>
+        <li><a href="#page2">2</a></li>
     </ul>
 
 </div>
@@ -83,7 +120,7 @@
           </div>
         </div>
     </div>
-
+    
     <script>
         const addToCartButtons = document.querySelectorAll('.addToCart');
         addToCartButtons.forEach(button => {

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style/login.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Thêm sản phẩm</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="password">Card Image</label>
+                <input type="password" id="password" placeholder="Nhập đường dẫn ảnh" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Cart Type</label>
+                <input type="password" id="password" placeholder="Nhập Card Type" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Card Name</label>
+                <input type="text" id="username" placeholder="Nhập tên card" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Giá tiền</label>
+                <input type="password" id="password" placeholder="Nhập giá tiền" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Số lượng</label>
+                <input type="password" id="password" placeholder="Nhập số lượng" required>
+            </div>
+            <button type="button" class="btn" id="login">Thêm sản phẩm</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('login').addEventListener('click', function () {
+            alert('Thêm sản phẩm thành công. Quay về trang quản lý sản phẩm');
+            window.location.href = '/assets/html/qlsp.html';
+        });
+    </script>
+</body>
+</html>

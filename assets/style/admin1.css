@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #907991;
+}
+
+
+.header {
+    width: 100%;
+}
+
+.header-top {
+    background-color: rgb(202, 201, 201);
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+
+.header-logo img {
+    padding-left: 52px;
+    width: auto;
+    height: 80px;
+    position: relative;
+}
+
+.header-main {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-h1 h1{
+    font-family: 'Roboto Slab', serif;
+    color: rgb(87, 146, 209);
+    font-size: 5rem;
+}
+
+.login-btn button {
+    margin-left: 30px;
+    width: 100px;
+    height: 40px;
+    border-radius: 13px;
+    background-color: #ffffff;
+    border-color: rgb(0, 8, 62);
+    transition-duration: 1.3s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-btn button:hover {  background-color: #74bcff;;  color: black;}
+
+.register-btn button {
+    margin-left: 4px;
+    width: 100px;
+    height: 40px;
+    border-radius: 13px;
+    background-color: #ffffff;
+    border-color: rgb(0, 8, 62);
+    transition-duration: 1.3s;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-btn button:hover {  background-color: #74bcff;;  color: black;}
+
+.logout-btn{
+    display: grid;
+    justify-content: center;
+}
+
+
+.logout-btn button{
+    text-align: center;
+    margin-right: 52px;
+    width: 100px;
+    height: 40px;
+    border-radius: 13px;
+    border-color: rgb(0, 8, 62);
+    transition-duration: 1.3s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logout-btn button:hover {  background-color: #74bcff;;  color: black;}
+
+.returnCart .asd{
+    margin-top: 13px;
+    margin-left: 69px;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+.returnCart .a{
+    margin-top: 13px;
+    margin-left: 23px;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+
+.returnCart a:hover{color: rgb(255, 0, 0);}
+
+
+.returnCart h1{
+    margin-top: 13px;
+    margin-bottom: 13px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.item {
+    width: 2000px;
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.item .type{
+    color: #555;
+}
+
+.details{
+    padding-left: 23px;
+    font-size:x-large;
+}
+
+.item .name {
+    font-weight: bold; 
+    color: #333;
+    font-size: xx-large; 
+}
+
+
+.item .quantity {
+    color: #555;
+}
+
+.item .price {
+    color: #E91E63;
+    font-weight: bold;
+}
+
+.btnCheckout{
+    position: relative;
+    background-color: #696bfa;
+    width: 650px;
+    margin-left: 325px;
+    margin-bottom: 31px;
+    margin-top: 13px;
+    border-radius: 10px;
+    font-weight: bold;
+    height: 50px;
+    border: none;
+    box-shadow: 0 10px 20px #69faeb99;
+    transition: 0.5s;
+    color: #fff;
+    cursor: pointer;
+}
+
+.listPage{
+    padding: 10px;
+    text-align: center;
+    list-style: none;
+}
+
+.listPage li{
+    background-color: #95c8f7;
+    padding: 13px;
+    display: inline-block;
+    margin: 0 8px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.listPage .active{
+    background-color: #fd8989;
+    color: #000000;
+}
+
+section {
+    display: none;
+}
+
+/* Hiển thị section khi được target */
+section:target {
+    display: grid;
+}
+
+/* Hiển thị mặc định page1 khi không có section nào được target */
+body:not(:has(section:target)) #page1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.delete{
+    width: 260px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4998d8;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.delete1{
+    width: 260px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4998d8;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: rgb(202, 201, 201);
+}
+
+.footer-content {
+    background-color: rgb(202, 201, 201);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif
+}
+
+.footer-logo {
+    margin: 18px;
+    width: 10%;
+    min-width: 180px;
+}

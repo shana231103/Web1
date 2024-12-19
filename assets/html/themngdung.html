@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style/login.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Thêm người dùng mới</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="password">Tên người dùng</label>
+                <input type="password" id="password" placeholder="Nhập tên người dùng" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Vị trí</label>
+                <input type="password" id="password" placeholder="Nhập vị trí" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Địa chỉ</label>
+                <input type="text" id="username" placeholder="Nhập địa chỉ" required>
+            </div>
+            <button type="button" class="btn" id="login">Thêm người dùng</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('login').addEventListener('click', function () {
+            alert('Thêm người dùng thành công. Quay về trang quản lý người dùng');
+            window.location.href = '/assets/html/qlngdung.html';
+        });
+    </script>
+</body>
+</html>

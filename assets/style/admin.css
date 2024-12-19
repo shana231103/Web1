@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #907991;
+}
+
+
+.header {
+    width: 100%;
+}
+
+.header-top {
+    background-color: rgb(202, 201, 201);
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+
+.header-logo img {
+    padding-left: 52px;
+    width: auto;
+    height: 80px;
+    position: relative;
+}
+
+.header-main {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-h1 h1{
+    font-family: 'Roboto Slab', serif;
+    color: rgb(87, 146, 209);
+    font-size: 5rem;
+}
+
+.login-btn button {
+    margin-left: 30px;
+    width: 100px;
+    height: 40px;
+    border-radius: 13px;
+    background-color: #ffffff;
+    border-color: rgb(0, 8, 62);
+    transition-duration: 1.3s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-btn button:hover {  background-color: #74bcff;;  color: black;}
+
+.register-btn button {
+    margin-left: 4px;
+    width: 100px;
+    height: 40px;
+    border-radius: 13px;
+    background-color: #ffffff;
+    border-color: rgb(0, 8, 62);
+    transition-duration: 1.3s;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-btn button:hover {  background-color: #74bcff;;  color: black;}
+
+.logout-btn{
+    display: grid;
+    justify-content: center;
+}
+
+
+.logout-btn button{
+    text-align: center;
+    margin-right: 52px;
+    width: 100px;
+    height: 40px;
+    border-radius: 13px;
+    border-color: rgb(0, 8, 62);
+    transition-duration: 1.3s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logout-btn button:hover {  background-color: #74bcff;;  color: black;}
+
+#admin-wrapper {
+    height: auto;
+    padding-top:113px;
+    padding-bottom: 78px;
+    padding-left:131px;
+    padding-right:131px;
+    background-color: #efe7e7;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-header .btn{
+    background-color: #6990fa;
+    padding:0 23px;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+    height: 50px;
+    border: none;
+    box-shadow: 0 10px 20px #69d3fa99;
+    transition: 0.5s;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-header a{
+    color: #000000;
+}
+
+.footer-content {
+    padding-top: 31px;
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    margin: 18px;
+    width: 10%;
+    min-width: 180px;
+}

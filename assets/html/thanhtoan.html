@@ -100,3 +100,15 @@
 
 </body>
 </html>
+
+<script>
+    const addToCartButtons = document.querySelectorAll('.buttonCheckout');
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            if (confirm('Bạn có muốn thanh toán ?')) {
+                alert('Thanh toán thành công. Bạn sẽ được đưa về trang chủ.');
+                window.location.href = '/assets/html/index2.html';
+                }
+        });
+    });
+</script>

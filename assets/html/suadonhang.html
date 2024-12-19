@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="/assets/style/login.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Chỉnh sửa thông tin sản phẩm</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="password">Tên khách hàng</label>
+                <input type="password" id="password" placeholder="Nhập tên khách hàng" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Địa chỉ của khách hàng</label>
+                <input type="text" id="username" placeholder="Nhập địa chỉ" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Trạng thái đơn hàng</label>
+                <input type="text" id="username" placeholder="Nhập trạng thái mới" required>
+            </div>
+            <button type="button" class="btn" id="login">Chỉnh sửa</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('login').addEventListener('click', function () {
+            alert('Chỉnh sửa thông tin đơn hàng thành công. Quay về trang quản lý đơn hàng');
+            window.location.href = '/assets/html/qldonhang.html';
+        });
+    </script>
+</body>
+</html>

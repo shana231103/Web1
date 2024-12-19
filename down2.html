@@ -23,7 +23,7 @@
                 </button>
             </div>
             <div class="cart">
-                <button type="button" href=""><img src="./assets/icon/shopping-cart.png" alt="">
+                <a href="cart.html"><button type="button" id="cart"><img src="./assets/icon/shopping-cart.png" alt=""></a>
                 </button>
             </div>
             <div class="logout-btn">
@@ -233,6 +233,10 @@
             button.addEventListener('click', () => {
                 alert('Đã thêm vào giỏ hàng');
             });
+        });
+
+        document.getElementById('cart').addEventListener('click', function () {
+            window.location.href = 'cart.html';
         });
         </script>
 

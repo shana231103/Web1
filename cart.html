@@ -25,9 +25,21 @@
                         <div class="name">Super Polymerization</div>
                         <div class="price">Giá: 139,380</div>
                         <div class="quantity">
-                            <span class="minus">-</span>
-                            <div class="quantity">Số lượng: 2</div>
-                            <span class="plus">+</span>
+                            <button 
+									onclick="decrementValue(this)" 
+									style="display: flex; align-items: center; justify-content: center; width: 23px; height: 23px; font-size: 1rem; font-weight: bold; border: 1px solid #ccc; border-radius: 0.5rem; background-color: #f5f5f5; cursor: pointer;">
+									-
+								</button>
+                                <input 
+                                class="quantity-input" 
+                                type="number" 
+                                value="1" 
+                                style="margin:0 4px; font-size: 20px; text-align: center; width: 50px; height: 23px; border: 1px solid #ccc; border-radius: 0.5rem;">
+                            <button 
+									onclick="incrementValue(this)" 
+									style="display: flex; align-items: center; justify-content: center; width: 23px; height: 23px; font-size: 1rem; font-weight: bold; border: 1px solid #ccc; border-radius: 0.5rem; background-color: #f5f5f5; cursor: pointer;">
+									+
+								</button>
                         </div>
                     </div>
                 </div>
@@ -37,11 +49,23 @@
                     </div>
                     <div class="details">
                         <div class="name">Winged Kuriboh</div>
-                        <div class="price">Giá: 139,380</div>
+                        <div class="price">Giá: 99,999</div>
                         <div class="quantity">
-                            <span class="minus">-</span>
-                            <div class="quantity">Số lượng: 2</div>
-                            <span class="plus">+</span>
+                            <button 
+									onclick="decrementValue(this)" 
+									style="display: flex; align-items: center; justify-content: center; width: 23px; height: 23px; font-size: 1rem; font-weight: bold; border: 1px solid #ccc; border-radius: 0.5rem; background-color: #f5f5f5; cursor: pointer;">
+									-
+								</button>
+                                <input 
+                                class="quantity-input" 
+                                type="number" 
+                                value="1" 
+                                style="margin:0 4px; font-size: 20px; text-align: center; width: 50px; height: 23px; border: 1px solid #ccc; border-radius: 0.5rem;">
+                            <button 
+									onclick="incrementValue(this)" 
+									style="display: flex; align-items: center; justify-content: center; width: 23px; height: 23px; font-size: 1rem; font-weight: bold; border: 1px solid #ccc; border-radius: 0.5rem; background-color: #f5f5f5; cursor: pointer;">
+									+
+								</button>
                         </div>
                     </div>
                 </div>
@@ -53,9 +77,21 @@
                         <div class="name">Number 107: Galaxy-Eyes Tachyon Dragon</div>
                         <div class="price">Giá: 30,000</div>
                         <div class="quantity">
-                            <span class="minus">-</span>
-                            <div class="quantity">Số lượng: 2</div>
-                            <span class="plus">+</span>
+                            <button 
+									onclick="decrementValue(this)" 
+									style="display: flex; align-items: center; justify-content: center; width: 23px; height: 23px; font-size: 1rem; font-weight: bold; border: 1px solid #ccc; border-radius: 0.5rem; background-color: #f5f5f5; cursor: pointer;">
+									-
+								</button>
+                                <input 
+                                class="quantity-input" 
+                                type="number" 
+                                value="1" 
+                                style="margin:0 4px; font-size: 20px; text-align: center; width: 50px; height: 23px; border: 1px solid #ccc; border-radius: 0.5rem;">
+                            <button 
+									onclick="incrementValue(this)" 
+									style="display: flex; align-items: center; justify-content: center; width: 23px; height: 23px; font-size: 1rem; font-weight: bold; border: 1px solid #ccc; border-radius: 0.5rem; background-color: #f5f5f5; cursor: pointer;">
+									+
+								</button>
                         </div>
                     </div>
                 </div>
@@ -67,9 +103,21 @@
                         <div class="name">Galaxy-Eyes Photon Dragon</div>
                         <div class="price">Giá: 10,000</div>
                         <div class="quantity">
-                            <span class="minus">-</span>
-                            <div class="quantity">Số lượng: 2</div>
-                            <span class="plus">+</span>
+                            <button 
+									onclick="decrementValue(this)" 
+									style="display: flex; align-items: center; justify-content: center; width: 23px; height: 23px; font-size: 1rem; font-weight: bold; border: 1px solid #ccc; border-radius: 0.5rem; background-color: #f5f5f5; cursor: pointer;">
+									-
+								</button>
+                                <input 
+                                class="quantity-input" 
+                                type="number" 
+                                value="1" 
+                                style="margin:0 4px; font-size: 20px; text-align: center; width: 50px; height: 23px; border: 1px solid #ccc; border-radius: 0.5rem;">
+                            <button 
+									onclick="incrementValue(this)" 
+									style="display: flex; align-items: center; justify-content: center; width: 23px; height: 23px; font-size: 1rem; font-weight: bold; border: 1px solid #ccc; border-radius: 0.5rem; background-color: #f5f5f5; cursor: pointer;">
+									+
+								</button>
                         </div>
                     </div>
                 </div>
@@ -92,3 +140,20 @@
 
 </body>
 </html>
+
+    <script>
+        function incrementValue(button) {
+    const input = button.parentElement.querySelector(".quantity-input");
+    const currentValue = parseInt(input.value) || 0;
+    input.value = currentValue + 1;
+}
+
+function decrementValue(button) {
+    const input = button.parentElement.querySelector(".quantity-input");
+    const currentValue = parseInt(input.value) || 0;
+    if (currentValue > 0) {
+        input.value = currentValue - 1;
+    }
+}
+
+    </script>
